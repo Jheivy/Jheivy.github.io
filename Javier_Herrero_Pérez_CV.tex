@@ -55,7 +55,7 @@
   \end{tabular*}\vspace{-4pt}
 }
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-\newcommand{\resumeSubHeadingList}{\begin{itemize}[leftmargin=0.1in, label={}, topsep=4pt, itemsep=6pt, parsep=0pt]}
+\newcommand{\resumeSubHeadingList}{\begin{itemize}[leftmargin=0.1in, label={}, topsep=3pt, itemsep=3pt, parsep=0pt]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 
 \begin{document}
@@ -75,15 +75,16 @@
 \section{About me}
 % I hold a degree in Physics from the University of Salamanca, with a strong foundation in mathematical modelling, statistics and data analysis. I am currently pursuing a Master’s degree in Data Science at the University of Valencia and have gained hands-on experience in applied data science during an internship at the AIR Institute, working on real-world AI and data projects.
 % I have practical experience with Python, machine learning and natural language processing, and I am seeking junior roles in Data Science or related fields.
-I studied Physics because I liked understanding how things work at a fundamental level. That same curiosity pulled me into Data Science and, more recently, into AI agents and LLM systems. I'm currently in my Master's at the University of Valencia, looking for a junior role where I can keep building: ideally on products that use language models or agentic workflows. I have real experience shipping ML pipelines from an internship at AIR Institute, and I'm particularly interested in Generative AI and LLM-based systems.
+I studied Physics because I liked understanding how things work at a fundamental level. That same curiosity pulled me into Data Science and, more recently, into AI agents and LLM systems. I now work as an AI Researcher \& Developer at Whizdom.ai, where I build churn and survival models end to end: from auditing raw data at scale to reproducible pipelines that score players every day, alongside my Master's in Data Science at the University of Valencia. I care about getting the data right before the model, and I'm particularly interested in Generative AI and LLM-based systems.
 
 
 \section{Technical Skills}
 \resumeSubHeadingList
     \resumeItem{\textbf{Programming}: Python, SQL, R, Fortran}
-  \resumeItem{\textbf{Data \& ML Libraries}: NumPy, Pandas, Scikit-learn}
+  \resumeItem{\textbf{Data \& ML}: NumPy, Pandas, Scikit-learn, LightGBM, XGBoost, SHAP, Optuna, Survival Analysis (Cox PH, Kaplan--Meier)}
   \resumeItem{\textbf{Deep Learning Frameworks}: TensorFlow, PyTorch, Keras}
-  \resumeItem{\textbf{MLOps \& Tools}: Git, AWS, Jupyter Notebook, MongoDB, Cassandra, LaTeX}
+  \resumeItem{\textbf{Data Engineering}: DuckDB, ClickHouse, AWS S3, MongoDB, Cassandra, Great Expectations, pandera}
+  \resumeItem{\textbf{MLOps \& Tools}: Git, Docker, MLflow, Kedro, Feast, FastAPI, BentoML, Streamlit, Jira, LaTeX}
     \resumeItem{\textbf{Languages}: Spanish (native), English (B1+: Professional communication and technical proficiency)}
 \resumeSubHeadingListEnd
 
@@ -92,10 +93,20 @@ I studied Physics because I liked understanding how things work at a fundamental
 \resumeSubHeadingList
 
 \resumeSubheading
+    {AI Researcher \& Developer}{Aug 2026 -- Present}
+    {Whizdom.ai (AI for iGaming)}{Remote}
+    \resumeSubHeadingList
+        \resumeItem{\textbullet~\textbf{Player Churn Prediction:} Built an end-to-end churn system on large-scale player-activity data (DuckDB/ClickHouse over AWS S3): a per-brand calibrated LightGBM plus a stratified Cox PH survival model for 7/14/30-day horizons. In an 11-month rolling backtest it \textbf{improved AUC by more than 0.2 over the churn score already in production} and by \textbf{0.10--0.12 over the recency baseline}, beating it in every brand and month.}
+        \resumeItem{\textbullet~\textbf{Production Data Audit:} Reviewed every production feature and uncovered leakage and definition errors in core variables (recency, tenure, active days) that would have produced a misleadingly perfect model. Introduced an as-of feature rule and an automated leakage test.}
+        \resumeItem{\textbullet~\textbf{Business Value:} Redefined churn from the data (60-day inactivity, backed by Kaplan--Meier curves and return-rate analysis). In a simulated retention campaign, ranking players by the model's value at risk reached \textbf{6--7 percentage points more at-risk revenue than value-weighted recency targeting}.}
+        \resumeItem{\textbullet~\textbf{MLOps:} Delivered a reproducible one-command pipeline from raw data to daily player scores with SHAP-based reasons (MLflow, Feast, Kedro, FastAPI, BentoML, Docker), with data-quality gates in Great Expectations and pandera. Cut raw-data loading time \textbf{by over 20$\times$} with DuckDB.}
+    \resumeSubHeadingListEnd
+
+\resumeSubheading
     {Data Scientist | Internship}{Jul 2024 -- Aug 2024}
     {AIR Institute (International Centre for Artificial Intelligence Research)}{Spain}
     \resumeSubHeadingList
-        \resumeItem{\textbullet~\textbf{Workplace Risk Classification:} Took a real sensor dataset from scratch and put together a 6-class risk detection pipeline: feature engineering (temporal exposure, exponential decay weighting), SMOTE to handle a 27:1 imbalance, and a Random Forest that hit \textbf{100\% accuracy and macro F1 = 0.99} on a stratified 80/20 split. Used SHAP to explain the model and show that CO$_2$ and cumulative exposure time were the dominant drivers. Also trained an XGBoost regressor to predict CO$_2$ from environmental sensors, hitting \textbf{R$^2$ = 0.9999 and MAE = 27.74\,ppm} ($<$6\% error).}
+        \resumeItem{\textbullet~\textbf{Workplace Risk Classification:} Built a 6-class risk detection pipeline from raw sensor data (temporal exposure features, SMOTE for a 27:1 imbalance, Random Forest with \textbf{macro F1 = 0.99}) and used SHAP to show that CO$_2$ and cumulative exposure were the dominant drivers. Also trained an XGBoost regressor to predict CO$_2$ (\textbf{MAE = 27.74\,ppm}, $<$6\% error).}
         \resumeItem{\textbullet~\textbf{Candidate Profiling (NLP):} Built a feature extraction pipeline with Whisper and PySentimiento to pull tone, emotion and linguistic signals from candidate interviews; the features fed a shortlisting classifier and measurably improved its precision and recall.}
     \resumeSubHeadingListEnd
 
@@ -110,23 +121,11 @@ I studied Physics because I liked understanding how things work at a fundamental
 %     \resumeItem{{\small Developed a multi-agent framework using LangGraph to optimize synchronous power dispatch and grid stability under high renewable volatility (Python, TensorFlow, Transformers, statsmodels, LangGraph).}}
 % \resumeSubHeadingListEnd
 
-\resumeSubheading
-{Clickbait Detection in News Headlines}{}{}{}
-\resumeSubHeadingList
-    \resumeItem{{\small Developed an NLP pipeline to detect clickbait using cosine similarity and topic modelling (Python, Scikit-learn, Transformers). Built a LangChain agent that autonomously scrapes news headlines and classifies them as clickbait or not in an end-to-end workflow.}}
-\resumeSubHeadingListEnd
+\resumeItem{\textbf{Clickbait Detection in News Headlines:} Developed an NLP pipeline to detect clickbait using cosine similarity and topic modelling (Python, Scikit-learn, Transformers). Built a LangChain agent that autonomously scrapes news headlines and classifies them as clickbait or not in an end-to-end workflow.}
 
-\resumeSubheading
-{Calorie Estimation from Food Images}{}{}{}
-\resumeSubHeadingList
-    \resumeItem{{\small Built a deep learning pipeline to estimate calories from images using CNN models (Python, TensorFlow, Hugging Face).}}
-\resumeSubHeadingListEnd
+\resumeItem{\textbf{Calorie Estimation from Food Images:} Built a deep learning pipeline to estimate calories from images using CNN models (Python, TensorFlow, Hugging Face).}
 
-\resumeSubheading
-{Exploratory Analysis of Labour Market Data}{}{}{}
-\resumeSubHeadingList
-    \resumeItem{{\small Performed EDA on Spanish labour market data to identify gender inequality patterns (R, tidyverse, ggplot2).}}
-\resumeSubHeadingListEnd
+\resumeItem{\textbf{Exploratory Analysis of Labour Market Data:} Performed EDA on Spanish labour market data to identify gender inequality patterns (R, tidyverse, ggplot2).}
 
 \resumeSubHeadingListEnd
 
@@ -144,17 +143,11 @@ I studied Physics because I liked understanding how things work at a fundamental
 
 \resumeSubheading
     {Master’s in Data Science}{Sept 2025 - Jun 2026 (expected)}
-    {University of Valencia}{Spain}
-    \resumeSubHeadingList
-        \resumeItem{\textbullet\ GPA: 8.86/10}
-    \resumeSubHeadingListEnd
+    {University of Valencia \textup{$\cdot$ GPA: 8.86/10}}{Spain}
 
 \resumeSubheading
     {Bachelor’s Degree in Physics}{Sept 2021 - Jul 2025}
-    {University of Salamanca}{Spain}
-    \resumeSubHeadingList
-        \resumeItem{\textbullet\ GPA: 7.25/10}
-    \resumeSubHeadingListEnd
+    {University of Salamanca \textup{$\cdot$ GPA: 7.25/10}}{Spain}
 
 
 \resumeSubHeadingListEnd

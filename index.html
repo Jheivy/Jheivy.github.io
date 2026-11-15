@@ -53,7 +53,7 @@
 
         <div class="info-content">
             <h1 class="name" title="Data Scientist"> Javier Herrero Pérez</h1>
-            <p class="title">Data Scientist | Physicist</p>
+            <p class="title">AI Researcher &amp; Developer | Physicist</p>
         </div>
 
         <button class="info_more-btn" data-sidebar-btn>
@@ -185,11 +185,11 @@
 
         <section class="about-text">
           <p>
-          I hold a degree in Physics from the University of Salamanca, with a strong foundation in mathematical modelling, statistics and data analysis. I am currently pursuing a Master’s degree in Data Science at the University of Valencia and have hands-on experience in applied AI, including machine learning and natural language processing, gained during an internship at the AIR Institute.
+          I hold a degree in Physics from the University of Salamanca, with a strong foundation in mathematical modelling, statistics and data analysis. Alongside my Master’s degree in Data Science at the University of Valencia, I work as an AI Researcher &amp; Developer at Whizdom.ai, building churn and survival models end to end: from auditing raw data at scale to reproducible pipelines that score players every day.
           </p>
 
           <p>
-          I am particularly interested in Generative AI and LLM-based systems, and I am seeking junior Data Scientist roles where I can contribute to building and deploying data-driven solutions in real-world products.
+          I care about getting the data right before the model, and I am particularly interested in Generative AI and LLM-based systems, building and deploying data-driven solutions in real-world products.
           </p>
         </section>
 
@@ -285,6 +285,22 @@
 
             <li class="timeline-item">
 
+              <h4 class="h4 timeline-item-title">AI Researcher &amp; Developer</h4>
+
+              <span>Aug 2026 — Present</span>
+
+              <p class="timeline-text">
+                Whizdom.ai (AI for iGaming), Remote.<br>
+                <strong>Player Churn Prediction:</strong> Built an end-to-end churn system on large-scale player-activity data (DuckDB/ClickHouse over AWS S3): a per-brand calibrated LightGBM plus a stratified Cox PH survival model for 7/14/30-day horizons. In an 11-month rolling backtest it improved AUC by more than 0.2 over the churn score already in production and by 0.10–0.12 over the recency baseline, beating it in every brand and month.<br>
+                <strong>Production Data Audit:</strong> Reviewed every production feature and uncovered leakage and definition errors in core variables (recency, tenure, active days) that would have produced a misleadingly perfect model. Introduced an as-of feature rule and an automated leakage test.<br>
+                <strong>Business Value:</strong> Redefined churn from the data (60-day inactivity, backed by Kaplan–Meier curves and return-rate analysis). In a simulated retention campaign, ranking players by the model's value at risk reached 6–7 percentage points more at-risk revenue than value-weighted recency targeting.<br>
+                <strong>MLOps:</strong> Delivered a reproducible one-command pipeline from raw data to daily player scores with SHAP-based reasons (MLflow, Feast, Kedro, FastAPI, BentoML, Docker), with data-quality gates in Great Expectations and pandera. Cut raw-data loading time by over 20× with DuckDB.
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
               <h4 class="h4 timeline-item-title">Data Scientist | Internship</h4>
 
               <span>Jul 2024 — Aug 2024</span>
@@ -319,6 +335,17 @@
             <li class="skill-chip"><span class="chip-emoji">🐼</span><span class="chip-name">Pandas</span><span class="chip-level">Advanced</span></li>
             <li class="skill-chip"><span class="chip-emoji">⚙️</span><span class="chip-name">Scikit-learn</span><span class="chip-level">Advanced</span></li>
             <li class="skill-chip"><span class="chip-emoji">📊</span><span class="chip-name">Data Visualisation</span><span class="chip-level">Advanced</span></li>
+            <li class="skill-chip"><span class="chip-emoji">🌳</span><span class="chip-name">LightGBM / XGBoost</span><span class="chip-level">Advanced</span></li>
+            <li class="skill-chip"><span class="chip-emoji">🔍</span><span class="chip-name">SHAP</span><span class="chip-level">Advanced</span></li>
+            <li class="skill-chip"><span class="chip-emoji">⏳</span><span class="chip-name">Survival Analysis</span><span class="chip-level">Intermediate</span></li>
+            <li class="skill-chip"><span class="chip-emoji">🎯</span><span class="chip-name">Optuna</span><span class="chip-level">Intermediate</span></li>
+          </ul>
+
+          <p class="skill-category-label">Data Engineering</p>
+          <ul class="skills-list skills-grid">
+            <li class="skill-chip"><span class="chip-emoji">🦆</span><span class="chip-name">DuckDB</span><span class="chip-level">Advanced</span></li>
+            <li class="skill-chip"><span class="chip-emoji">⚡</span><span class="chip-name">ClickHouse</span><span class="chip-level">Intermediate</span></li>
+            <li class="skill-chip"><span class="chip-emoji">✅</span><span class="chip-name">Great Expectations / pandera</span><span class="chip-level">Intermediate</span></li>
           </ul>
 
           <p class="skill-category-label">Deep Learning</p>
@@ -331,7 +358,12 @@
           <p class="skill-category-label">MLOps &amp; Tools</p>
           <ul class="skills-list skills-grid">
             <li class="skill-chip"><span class="chip-emoji">🔗</span><span class="chip-name">Git</span><span class="chip-level">Advanced</span></li>
-            <li class="skill-chip"><span class="chip-emoji">☁️</span><span class="chip-name">AWS</span><span class="chip-level">Beginner</span></li>
+            <li class="skill-chip"><span class="chip-emoji">☁️</span><span class="chip-name">AWS (S3)</span><span class="chip-level">Intermediate</span></li>
+            <li class="skill-chip"><span class="chip-emoji">🐳</span><span class="chip-name">Docker</span><span class="chip-level">Intermediate</span></li>
+            <li class="skill-chip"><span class="chip-emoji">📈</span><span class="chip-name">MLflow</span><span class="chip-level">Advanced</span></li>
+            <li class="skill-chip"><span class="chip-emoji">🧩</span><span class="chip-name">Kedro / Feast</span><span class="chip-level">Intermediate</span></li>
+            <li class="skill-chip"><span class="chip-emoji">🚀</span><span class="chip-name">FastAPI / BentoML</span><span class="chip-level">Intermediate</span></li>
+            <li class="skill-chip"><span class="chip-emoji">🖥️</span><span class="chip-name">Streamlit</span><span class="chip-level">Advanced</span></li>
             <li class="skill-chip"><span class="chip-emoji">🍃</span><span class="chip-name">MongoDB</span><span class="chip-level">Beginner</span></li>
             <li class="skill-chip"><span class="chip-emoji">💻</span><span class="chip-name">Jupyter</span><span class="chip-level">Advanced</span></li>
           </ul>
