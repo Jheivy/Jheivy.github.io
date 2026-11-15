@@ -3,620 +3,191 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Data Scientist | Javier Herrero Pérez</title>
+  <title>Javier Herrero Pérez, Data Scientist</title>
+  <meta name="description" content="Data scientist at Whizdom.ai with a background in Physics. Churn and survival models, data quality, MLOps and NLP. Experience, projects and CV.">
+  <meta name="author" content="Javier Herrero Pérez">
+  <link rel="canonical" href="https://jheivy.github.io/">
 
-  <!--
-    - favicon
-  -->
-  <link rel="shortcut icon" href="./assets/images/logo.png" type="image/x-icon">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://jheivy.github.io/">
+  <meta property="og:title" content="Javier Herrero Pérez, Data Scientist">
+  <meta property="og:description" content="Churn and survival models, data quality, MLOps and NLP. Experience, projects and CV.">
+  <meta property="og:image" content="https://jheivy.github.io/assets/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
 
-  <!--
-    - custom css link
-  -->
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <!--
-    - google font link
-  -->
+  <link rel="icon" href="./assets/images/logo.png" type="image/png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
 <body>
+  <div class="page">
 
-  <!--
-    - #MAIN
-  -->
+    <nav class="lang" aria-label="Language">
+      <button type="button" data-lang="es" aria-pressed="false">ES</button>
+      <button type="button" data-lang="en" aria-pressed="true">EN</button>
+    </nav>
 
-  <main>
-
-    <!--
-      - #SIDEBAR
-    -->
-
-    <aside class="sidebar" data-sidebar>
-
-      <div class="sidebar-info">
-
-        <!-- <figure class="avatar-box">
-          <img src="./assets/images/mifoto.png" alt="Richard hanrick" width="80">
-        </figure> -->
-
-        <figure class="avatar-box">
-          <div style="width: 90px; height: 90px; border-radius: 50%; background: linear-gradient(135deg, #2196F3 0%, #1976D2 100%); display: flex; align-items: center; justify-content: center; font-size: 32px; font-weight: 700; color: white; box-shadow: 0 4px 12px rgba(33, 150, 243, 0.4);">
-            JHP
-          </div>
-        </figure>
-
-        <div class="info-content">
-            <h1 class="name" title="Data Scientist"> Javier Herrero Pérez</h1>
-            <p class="title">AI Researcher &amp; Developer | Physicist</p>
+    <header>
+      <div class="intro">
+        <!-- When the photo is added: <img class="photo" src="./assets/images/me.jpg" alt="Javier Herrero Pérez" width="88" height="88"> -->
+        <div>
+          <h1>Javier Herrero Pérez</h1>
+          <p class="tagline" data-i18n="tagline">Data scientist at Whizdom.ai, physicist by training.</p>
+          <p class="location" data-i18n="location">Salamanca, Spain</p>
         </div>
-
-        <button class="info_more-btn" data-sidebar-btn>
-          <span>Show Contacts</span>
-
-          <ion-icon name="chevron-down"></ion-icon>
-        </button>
-
       </div>
 
-      <div class="sidebar-info_more">
-
-        <div class="separator"></div>
-
-        <ul class="contacts-list">
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="mail-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Email</p>
-
-              <a href="mailto:jherrerop88@gmail.com" class="contact-link">jherrerop88@gmail.com</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="phone-portrait-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Phone</p>
-
-              <a href="tel:+34656181225" class="contact-link">+34 656 181 225</a>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="calendar-outline"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">Birthday</p>
-
-              <time datetime="2003-01-28">January 28, 2003</time>
-            </div>
-
-          </li>
-
-          <li class="contact-item">
-
-            <div class="icon-box">
-              <ion-icon name="logo-github"></ion-icon>
-            </div>
-
-            <div class="contact-info">
-              <p class="contact-title">GitHub</p>
-
-              <a href="https://github.com/Jheivy" target="_blank" class="contact-link">github.com/Jheivy</a>
-            </div>
-
-          </li>
-
-        </ul>
-
-        <div class="separator"></div>
-
-
-      </div>
-
-    </aside>
-
-
-
-
-
-    <!--
-      - #main-content
-    -->
-
-    <div class="main-content">
-
-      <!--
-        - #NAVBAR
-      -->
-
-      <nav class="navbar">
-
-        <ul class="navbar-list">
-
-          <li class="navbar-item">
-            <button class="navbar-link  active" data-nav-link>About</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Resume</button>
-          </li>
-
-          <li class="navbar-item">
-            <button class="navbar-link" data-nav-link>Portfolio</button>
-          </li>
-
-        </ul>
-
-      </nav>
-
-
-
-
-
-      <!--
-        - #ABOUT
-      -->
-
-      <article class="about  active" data-page="about">
-
-        <header>
-          <h2 class="h2 article-title">About me</h2>
-        </header>
-
-        <section class="about-text">
-          <p>
-          I hold a degree in Physics from the University of Salamanca, with a strong foundation in mathematical modelling, statistics and data analysis. Alongside my Master’s degree in Data Science at the University of Valencia, I work as an AI Researcher &amp; Developer at Whizdom.ai, building churn and survival models end to end: from auditing raw data at scale to reproducible pipelines that score players every day.
-          </p>
-
-          <p>
-          I care about getting the data right before the model, and I am particularly interested in Generative AI and LLM-based systems, building and deploying data-driven solutions in real-world products.
-          </p>
-        </section>
-
-        <section class="cta-section">
-
-          <a href="https://raw.githubusercontent.com/Jheivy/Jheivy.github.io/main/out/Javier_Herrero_Pérez_CV.pdf" style="text-decoration: none;">
-            <div class="cta-card">
-              <span class="cta-icon">📄</span>
-              <h4 class="cta-title">Download CV</h4>
-              <p class="cta-subtitle">PDF Resume</p>
-            </div>
-          </a>
-
-          <a href="https://www.linkedin.com/in/javier-herrero-p%C3%A9rez-ba672b271/" target="_blank" style="text-decoration: none;">
-            <div class="cta-card">
-              <span class="cta-icon">💼</span>
-              <h4 class="cta-title">LinkedIn Profile</h4>
-              <p class="cta-subtitle">Connect with me</p>
-            </div>
-          </a>
-
-        </section>
-
-
-      </article>
-
-
-
-
-
-
-      <!--
-        - #RESUME
-      -->
-
-      <article class="resume" data-page="resume">
-
-        <header>
-          <h2 class="h2 article-title">Resume</h2>
-        </header>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Education</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Master's in Data Science</h4>
-
-              <span>Sept 2025 — Jun 2026 (expected)</span>
-
-              <p class="timeline-text">
-                University of Valencia, Spain. GPA: 8.86/10. Specialising in machine learning, statistical modelling, NLP, and deep learning.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Bachelor's Degree in Physics</h4>
-
-              <span>Sept 2021 — Jul 2025</span>
-
-              <p class="timeline-text">
-                University of Salamanca, Spain. GPA: 7.25/10. Strong foundation in mathematics, computational methods, and scientific problem-solving.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="timeline">
-
-          <div class="title-wrapper">
-            <div class="icon-box">
-              <ion-icon name="book-outline"></ion-icon>
-            </div>
-
-            <h3 class="h3">Experience</h3>
-          </div>
-
-          <ol class="timeline-list">
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">AI Researcher &amp; Developer</h4>
-
-              <span>Aug 2026 — Present</span>
-
-              <p class="timeline-text">
-                Whizdom.ai (AI for iGaming), Remote.<br>
-                <strong>Player Churn Prediction:</strong> Built an end-to-end churn system on large-scale player-activity data (DuckDB/ClickHouse over AWS S3): a per-brand calibrated LightGBM plus a stratified Cox PH survival model for 7/14/30-day horizons. In an 11-month rolling backtest it improved AUC by more than 0.2 over the churn score already in production and by 0.10–0.12 over the recency baseline, beating it in every brand and month.<br>
-                <strong>Production Data Audit:</strong> Reviewed every production feature and uncovered leakage and definition errors in core variables (recency, tenure, active days) that would have produced a misleadingly perfect model. Introduced an as-of feature rule and an automated leakage test.<br>
-                <strong>Business Value:</strong> Redefined churn from the data (60-day inactivity, backed by Kaplan–Meier curves and return-rate analysis). In a simulated retention campaign, ranking players by the model's value at risk reached 6–7 percentage points more at-risk revenue than value-weighted recency targeting.<br>
-                <strong>MLOps:</strong> Delivered a reproducible one-command pipeline from raw data to daily player scores with SHAP-based reasons (MLflow, Feast, Kedro, FastAPI, BentoML, Docker), with data-quality gates in Great Expectations and pandera. Cut raw-data loading time by over 20× with DuckDB.
-              </p>
-
-            </li>
-
-            <li class="timeline-item">
-
-              <h4 class="h4 timeline-item-title">Data Scientist | Internship</h4>
-
-              <span>Jul 2024 — Aug 2024</span>
-
-              <p class="timeline-text">
-                AIR Institute (International Centre for Artificial Intelligence Research), Spain.<br>
-                <strong>Workplace Risk Classification:</strong> Built a 6-class risk detection pipeline from raw sensor data — feature engineering, SMOTE for a 27:1 imbalance, Random Forest (100% accuracy, macro F1 = 0.99) and SHAP explainability. Also trained an XGBoost regressor to predict CO₂ levels (R² = 0.9999, MAE = 27.74 ppm).<br>
-                <strong>Candidate Profiling (NLP):</strong> Built a feature extraction pipeline with Whisper and PySentimiento to capture tone, emotion and linguistic signals from interviews, improving shortlisting classifier precision and recall.
-              </p>
-
-            </li>
-
-          </ol>
-
-        </section>
-
-        <section class="skill">
-
-          <h3 class="h3 skills-title">My skills</h3>
-
-          <p class="skill-category-label">Programming</p>
-          <ul class="skills-list skills-grid">
-            <li class="skill-chip"><span class="chip-emoji">🐍</span><span class="chip-name">Python</span><span class="chip-level">Advanced</span></li>
-            <li class="skill-chip"><span class="chip-emoji">🗄️</span><span class="chip-name">SQL</span><span class="chip-level">Advanced</span></li>
-            <li class="skill-chip"><span class="chip-emoji">🔤</span><span class="chip-name">R</span><span class="chip-level">Intermediate</span></li>
-            <li class="skill-chip"><span class="chip-emoji">🔩</span><span class="chip-name">Fortran</span><span class="chip-level">Intermediate</span></li>
-          </ul>
-
-          <p class="skill-category-label">Data &amp; ML Libraries</p>
-          <ul class="skills-list skills-grid">
-            <li class="skill-chip"><span class="chip-emoji">🔢</span><span class="chip-name">NumPy</span><span class="chip-level">Advanced</span></li>
-            <li class="skill-chip"><span class="chip-emoji">🐼</span><span class="chip-name">Pandas</span><span class="chip-level">Advanced</span></li>
-            <li class="skill-chip"><span class="chip-emoji">⚙️</span><span class="chip-name">Scikit-learn</span><span class="chip-level">Advanced</span></li>
-            <li class="skill-chip"><span class="chip-emoji">📊</span><span class="chip-name">Data Visualisation</span><span class="chip-level">Advanced</span></li>
-            <li class="skill-chip"><span class="chip-emoji">🌳</span><span class="chip-name">LightGBM / XGBoost</span><span class="chip-level">Advanced</span></li>
-            <li class="skill-chip"><span class="chip-emoji">🔍</span><span class="chip-name">SHAP</span><span class="chip-level">Advanced</span></li>
-            <li class="skill-chip"><span class="chip-emoji">⏳</span><span class="chip-name">Survival Analysis</span><span class="chip-level">Intermediate</span></li>
-            <li class="skill-chip"><span class="chip-emoji">🎯</span><span class="chip-name">Optuna</span><span class="chip-level">Intermediate</span></li>
-          </ul>
-
-          <p class="skill-category-label">Data Engineering</p>
-          <ul class="skills-list skills-grid">
-            <li class="skill-chip"><span class="chip-emoji">🦆</span><span class="chip-name">DuckDB</span><span class="chip-level">Advanced</span></li>
-            <li class="skill-chip"><span class="chip-emoji">⚡</span><span class="chip-name">ClickHouse</span><span class="chip-level">Intermediate</span></li>
-            <li class="skill-chip"><span class="chip-emoji">✅</span><span class="chip-name">Great Expectations / pandera</span><span class="chip-level">Intermediate</span></li>
-          </ul>
-
-          <p class="skill-category-label">Deep Learning</p>
-          <ul class="skills-list skills-grid">
-            <li class="skill-chip"><span class="chip-emoji">🧠</span><span class="chip-name">TensorFlow</span><span class="chip-level">Intermediate</span></li>
-            <li class="skill-chip"><span class="chip-emoji">🔥</span><span class="chip-name">PyTorch</span><span class="chip-level">Intermediate</span></li>
-            <li class="skill-chip"><span class="chip-emoji">📝</span><span class="chip-name">NLP</span><span class="chip-level">Intermediate</span></li>
-          </ul>
-
-          <p class="skill-category-label">MLOps &amp; Tools</p>
-          <ul class="skills-list skills-grid">
-            <li class="skill-chip"><span class="chip-emoji">🔗</span><span class="chip-name">Git</span><span class="chip-level">Advanced</span></li>
-            <li class="skill-chip"><span class="chip-emoji">☁️</span><span class="chip-name">AWS (S3)</span><span class="chip-level">Intermediate</span></li>
-            <li class="skill-chip"><span class="chip-emoji">🐳</span><span class="chip-name">Docker</span><span class="chip-level">Intermediate</span></li>
-            <li class="skill-chip"><span class="chip-emoji">📈</span><span class="chip-name">MLflow</span><span class="chip-level">Advanced</span></li>
-            <li class="skill-chip"><span class="chip-emoji">🧩</span><span class="chip-name">Kedro / Feast</span><span class="chip-level">Intermediate</span></li>
-            <li class="skill-chip"><span class="chip-emoji">🚀</span><span class="chip-name">FastAPI / BentoML</span><span class="chip-level">Intermediate</span></li>
-            <li class="skill-chip"><span class="chip-emoji">🖥️</span><span class="chip-name">Streamlit</span><span class="chip-level">Advanced</span></li>
-            <li class="skill-chip"><span class="chip-emoji">🍃</span><span class="chip-name">MongoDB</span><span class="chip-level">Beginner</span></li>
-            <li class="skill-chip"><span class="chip-emoji">💻</span><span class="chip-name">Jupyter</span><span class="chip-level">Advanced</span></li>
-          </ul>
-
-          <p class="skill-category-label">Languages</p>
-          <ul class="skills-list skills-grid">
-            <li class="skill-chip"><span class="chip-emoji">🇪🇸</span><span class="chip-name">Spanish</span><span class="chip-level">Native</span></li>
-            <li class="skill-chip"><span class="chip-emoji">🇬🇧</span><span class="chip-name">English</span><span class="chip-level">B1+ Professional</span></li>
-          </ul>
-
-        </section>
-
-      </article>
-
-
-
-
-
-      <!--
-        - #PORTFOLIO
-      -->
-
-      <article class="portfolio" data-page="portfolio">
-
-        <header>
-          <h2 class="h2 article-title">Portfolio</h2>
-        </header>
-
-        <section class="projects">
-
-          <ul class="filter-list">
-
-
-          </ul>
-
-          <div class="filter-select-box">
-
-            <button class="filter-select" data-select>
-
-              <div class="select-value" data-selecct-value>Select category</div>
-
-              <div class="select-icon">
-                <ion-icon name="chevron-down"></ion-icon>
-              </div>
-
-            </button>
-
-            <ul class="select-list">
-
-              <li class="select-item">
-                <button data-select-item>All</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web design</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Applications</button>
-              </li>
-
-              <li class="select-item">
-                <button data-select-item>Web development</button>
-              </li>
-
+      <p class="links">
+        <a href="mailto:jherrerop88@gmail.com">Email</a>
+        <a href="https://www.linkedin.com/in/javier-herrero-p%C3%A9rez-ba672b271/" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Jheivy" target="_blank" rel="noopener">GitHub</a>
+        <a href="./out/Javier_Herrero_Pérez_CV.pdf" data-cv target="_blank" rel="noopener" data-i18n="cv">CV (PDF)</a>
+      </p>
+    </header>
+
+    <main>
+
+      <section class="about" aria-labelledby="about-title">
+        <h2 id="about-title" data-i18n="about.title">About</h2>
+        <p data-i18n="about.p1">I studied Physics at the University of Salamanca and moved into data science because I wanted to keep doing what I liked about it: understand how a system works before trusting a result. I'm completing a Master's in Data Science at the University of Valencia.</p>
+        <p data-i18n="about.p2">Since August 2026 I work at Whizdom.ai on churn and survival models for online gaming platforms. A lot of the job is making sure the data means what we think it means, and then building simple models that hold up in production. I'm also interested in language models and agents.</p>
+      </section>
+
+      <section aria-labelledby="exp-title">
+        <h2 id="exp-title" data-i18n="exp.title">Experience</h2>
+
+        <div class="entry">
+          <p class="when" data-i18n="exp.w.when">Aug 2026 – now</p>
+          <div>
+            <h3>AI Researcher &amp; Developer</h3>
+            <p class="org" data-i18n="exp.w.org">Whizdom.ai, remote</p>
+            <p class="summary" data-i18n="exp.w.summary">Research and development of churn prediction for iGaming operators, from the raw data to production.</p>
+            <ul class="points">
+              <li data-i18n="exp.w.1">Built a calibrated LightGBM churn model and a Cox survival model for 7, 14 and 30 day horizons. In an 11 month backtest it improves AUC by more than 0.2 over the score that was in production.</li>
+              <li data-i18n="exp.w.2">Audited the production features and found leakage and definition errors in recency, tenure and active days before they could reach the model.</li>
+              <li data-i18n="exp.w.3">Set up a reproducible pipeline that goes from raw data to daily player scores with one command, using DuckDB, ClickHouse, MLflow, Feast and Docker.</li>
             </ul>
-
           </div>
-
-          <ul class="project-list">
-
-  <li class="project-item active" data-filter-item data-category="deep learning">
-    <a href="https://github.com/hepejaAED/CalorIA" target="_blank">
-
-      <figure class="project-img">
-        <div class="project-item-icon-box">
-          <ion-icon name="eye-outline"></ion-icon>
         </div>
 
-        <img src="./assets/images/calorIA.png" alt="CalorIA" loading="lazy">
-      </figure>
+        <div class="entry">
+          <p class="when" data-i18n="exp.a.when">Jul – Aug 2024</p>
+          <div>
+            <h3 data-i18n="exp.a.role">Data Science Intern</h3>
+            <p class="org">AIR Institute, Spain</p>
+            <ul class="points">
+              <li data-i18n="exp.a.1">Classified workplace risk from environmental sensor data with a Random Forest (macro F1 0.99) and explained its decisions with SHAP.</li>
+              <li data-i18n="exp.a.2">Extracted tone and emotion features from interview recordings with Whisper and pysentimiento to support candidate shortlisting.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
 
-      <h3 class="project-title">CalorIA</h3>
+      <section aria-labelledby="proj-title">
+        <h2 id="proj-title" data-i18n="proj.title">Projects</h2>
 
-      <p class="project-category">Deep Learning</p>
-
-    </a>
-  </li>
-
-  <li class="project-item active" data-filter-item data-category="eda">
-    <a href="https://github.com/hepejaAED/AED_proyecto" target="_blank">
-
-      <figure class="project-img">
-        <div class="project-item-icon-box">
-          <ion-icon name="eye-outline"></ion-icon>
+        <div class="project">
+          <h3><a href="https://github.com/hepejav/Telco_Customer_Chrun" target="_blank" rel="noopener" data-i18n="proj.telco.t">Telco customer churn</a></h3>
+          <p data-i18n="proj.telco.d">Churn classifier that uses billing anomalies from regression residuals as features, with a voting ensemble and a tuned decision threshold. AUC 0.85.</p>
+          <p class="stack">Python, XGBoost, LightGBM, scikit-learn</p>
         </div>
 
-        <img src="./assets/images/AED.png" alt="ProyectoAED" loading="lazy">
-      </figure>
-
-      <h3 class="project-title">Analysis of the gender gap in the Spanish market</h3>
-
-      <p class="project-category">Exploratory data analysis</p>
-
-    </a>
-  </li>
-
-  <li class="project-item active" data-filter-item data-category="nlp">
-    <a href="https://github.com/hepejaAED/ProyectoNLP" target="_blank">
-
-      <figure class="project-img">
-        <div class="project-item-icon-box">
-          <ion-icon name="eye-outline"></ion-icon>
+        <div class="project">
+          <h3><a href="https://github.com/hepejav/ProyectoNLP" target="_blank" rel="noopener" data-i18n="proj.nlp.t">Clickbait in Spanish news</a></h3>
+          <p data-i18n="proj.nlp.d">Compared headlines with article text from nine Spanish outlets using embeddings and topic models, and built a LangChain agent that scrapes and labels new headlines. Team of seven.</p>
+          <p class="stack">Python, Transformers, LangChain, UMAP</p>
         </div>
 
-        <img src="./assets/images/NLP.png" alt="Clickbait NLP" loading="lazy">
-      </figure>
-
-      <h3 class="project-title">Detecting clickbait in news articles</h3>
-
-      <p class="project-category">NLP · LangChain</p>
-
-    </a>
-  </li>
-
-  <li class="project-item active" data-filter-item data-category="causal inference">
-    <a href="https://github.com/hepejaAED/An-lisis-de-los-datos-de-Lalonde-1986-y-Dehejia-y-Wahba-1999-" target="_blank">
-
-      <figure class="project-img">
-        <div class="project-item-icon-box">
-          <ion-icon name="eye-outline"></ion-icon>
+        <div class="project">
+          <h3><a href="https://github.com/hepejav/CalorIA" target="_blank" rel="noopener">CalorIA</a></h3>
+          <p data-i18n="proj.cal.d">Estimates the calories of a meal from a photo. A vision language model identifies the foods and portions, and the nutrients come from the USDA database. Team of two.</p>
+          <p class="stack">Python, Qwen2-VL, Hugging Face</p>
         </div>
 
-        <img src="./assets/images/IC.png" alt="Lalonde Analysis" loading="lazy">
-      </figure>
-
-      <h3 class="project-title">Causal Analysis of the Lalonde Dataset</h3>
-
-      <p class="project-category">Causal inference</p>
-
-    </a>
-  </li>
-
-  <li class="project-item active" data-filter-item data-category="statistics optimization">
-    <a href="https://github.com/Jheivy/Portfolio-Optimization-ARIMA-LogUtility" target="_blank">
-
-      <figure class="project-img">
-        <div class="project-item-icon-box">
-          <ion-icon name="eye-outline"></ion-icon>
+        <div class="project">
+          <h3><a href="https://github.com/hepejav/Practicas_proyecto" target="_blank" rel="noopener" data-i18n="proj.air.t">Workplace risk from air quality</a></h3>
+          <p data-i18n="proj.air.d">Six class risk classification from sensor data, with time weighted exposure features and SMOTE for a 27 to 1 class imbalance. Macro F1 0.99.</p>
+          <p class="stack">Python, scikit-learn, XGBoost, SHAP</p>
         </div>
 
-        <img src="./assets/images/EO.png" alt="Portfolio Optimization" loading="lazy">
-      </figure>
-
-      <h3 class="project-title">Portfolio optimisation and forecasting ARIMA</h3>
-
-      <p class="project-category">Statistics and optimisation</p>
-
-    </a>
-  </li>
-
-  <li class="project-item active" data-filter-item data-category="machine learning">
-    <a href="https://github.com/hepejaAED/Telco_Customer_Chrun" target="_blank">
-
-      <figure class="project-img">
-        <div class="project-item-icon-box">
-          <ion-icon name="eye-outline"></ion-icon>
+        <div class="project">
+          <h3><a href="https://github.com/hepejav/An-lisis-de-los-datos-de-Lalonde-1986-y-Dehejia-y-Wahba-1999-" target="_blank" rel="noopener" data-i18n="proj.lal.t">Job training and earnings</a></h3>
+          <p data-i18n="proj.lal.d">Causal analysis of the Lalonde job training data: propensity scores, trimming to improve overlap and adjusted regression, checking each identification assumption.</p>
+          <p class="stack" data-i18n="proj.lal.s">Causal inference, propensity scores</p>
         </div>
 
-        <img src="./assets/images/ML.png" alt="Telco Churn" loading="lazy">
-      </figure>
-
-      <h3 class="project-title">Telco Customer Churn</h3>
-
-      <p class="project-category">Machine Learning</p>
-
-    </a>
-  </li>
-
-
-  <li class="project-item active" data-filter-item data-category="machine learning">
-    <a href="https://github.com/hepejaAED/Practicas_proyecto2" target="_blank">
-
-      <figure class="project-img">
-        <div class="project-item-icon-box">
-          <ion-icon name="eye-outline"></ion-icon>
+        <div class="project">
+          <h3><a href="https://github.com/Jheivy/Portfolio-Optimization-ARIMA-LogUtility" target="_blank" rel="noopener" data-i18n="proj.port.t">Portfolio optimisation with AutoARIMA</a></h3>
+          <p data-i18n="proj.port.d">One step ahead forecasts with no look ahead bias feed mean variance and log utility portfolios. It got the top grade in the course.</p>
+          <p class="stack">R, forecast, quadprog, nloptr</p>
         </div>
 
-        <img src="./assets/images/sentiment.png" alt="Sentiment Analysis in Job Interviews" loading="lazy">
-      </figure>
-
-      <h3 class="project-title">Sentiment Analysis in Job Interviews</h3>
-
-      <p class="project-category">NLP</p>
-
-    </a>
-  </li>
-
-
-    <li class="project-item active" data-filter-item data-category="machine learning">
-    <a href="https://github.com/hepejaAED/Practicas_proyecto" target="_blank">
-
-      <figure class="project-img">
-        <div class="project-item-icon-box">
-          <ion-icon name="eye-outline"></ion-icon>
+        <div class="project">
+          <h3><a href="https://github.com/hepejav/Practicas_proyecto2" target="_blank" rel="noopener" data-i18n="proj.sent.t">Sentiment in job interviews</a></h3>
+          <p data-i18n="proj.sent.d">Emotion scores for 1,502 transcribed interview segments, combined with an exponential sentiment model and an analysis of each speaker's vocabulary.</p>
+          <p class="stack">Python, Whisper, pysentimiento</p>
         </div>
 
-        <img src="./assets/images/airwork.png" alt="Air Quality & Workplace Risk Classification" loading="lazy">
-      </figure>
+        <div class="project">
+          <h3><a href="https://github.com/hepejav/AED_proyecto" target="_blank" rel="noopener" data-i18n="proj.aed.t">Gender gap in the Spanish labour market</a></h3>
+          <p data-i18n="proj.aed.d">Exploratory analysis of activity and unemployment in Spain by sex and age group, with animated charts. Team project.</p>
+          <p class="stack">R, tidyverse, ggplot2</p>
+        </div>
+      </section>
 
-      <h3 class="project-title">Air Quality & Workplace Risk Classification</h3>
+      <section aria-labelledby="skills-title">
+        <h2 id="skills-title" data-i18n="skills.title">Skills</h2>
+        <dl class="skills">
+          <dt data-i18n="skills.prog">Programming</dt>
+          <dd>Python, SQL, R, Fortran</dd>
+          <dt data-i18n="skills.ml">Modelling</dt>
+          <dd data-i18n="skills.ml.d">scikit-learn, LightGBM, XGBoost, SHAP, Optuna, survival analysis, causal inference</dd>
+          <dt data-i18n="skills.dl">Deep learning</dt>
+          <dd>PyTorch, TensorFlow, Hugging Face, LangChain</dd>
+          <dt data-i18n="skills.data">Data</dt>
+          <dd>DuckDB, ClickHouse, AWS S3, Great Expectations, pandera</dd>
+          <dt>MLOps</dt>
+          <dd>MLflow, Feast, Docker, FastAPI, Git</dd>
+          <dt data-i18n="skills.lang">Languages</dt>
+          <dd data-i18n="skills.lang.d">Spanish (native), English (B1+, working proficiency)</dd>
+        </dl>
+      </section>
 
-      <p class="project-category">EDA, Machine Learning </p>
+      <section aria-labelledby="edu-title">
+        <h2 id="edu-title" data-i18n="edu.title">Education</h2>
 
-    </a>
-  </li>
+        <div class="entry">
+          <p class="when">2025 – 2026</p>
+          <div>
+            <h3 data-i18n="edu.msc">Master's in Data Science</h3>
+            <p class="org" data-i18n="edu.msc.org">University of Valencia, GPA 8.86/10</p>
+          </div>
+        </div>
 
-</ul>
-        </section>
+        <div class="entry">
+          <p class="when">2021 – 2025</p>
+          <div>
+            <h3 data-i18n="edu.bsc">Bachelor's in Physics</h3>
+            <p class="org" data-i18n="edu.bsc.org">University of Salamanca, GPA 7.25/10</p>
+          </div>
+        </div>
+      </section>
 
-      </article>
+    </main>
 
+    <footer>
+      <p data-i18n="footer">Updated November 2026.</p>
+    </footer>
 
+  </div>
 
-
-
-      <!--
-        - #BLOG
-      -->
-
-    </div>
-
-  </main>
-
-
-
-
-
-
-
-
-
-  <!--
-    - custom js link
-  -->
   <script src="./assets/js/script.js"></script>
-
-  <!--
-    - ionicon link
-  -->
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-
 </body>
 
 </html>

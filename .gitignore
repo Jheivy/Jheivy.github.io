@@ -1,0 +1,13 @@
+# LaTeX build by-products (only the PDF in out/ is published)
+out/*
+!out/*.pdf
+*.aux
+*.log
+*.out
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+
+# local tooling
+.claude/
+.DS_Store
