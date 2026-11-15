@@ -28,7 +28,7 @@ body {
 }
 
 .page {
-  max-width: 680px;
+  max-width: 840px;
   margin: 0 auto;
   padding: 56px 24px 72px;
 }
@@ -175,16 +175,72 @@ h3 {
 
 /* projects */
 
-.project + .project { margin-top: 26px; }
+.lede {
+  margin-top: 20px;
+  max-width: 600px;
+}
 
-.project p { margin-top: 2px; }
+.year {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--faint);
+  margin: 40px 0 16px;
+}
+
+.year:first-of-type { margin-top: 0; }
+
+.project {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 14px;
+}
+
+.project + .project { margin-top: 36px; }
+
+.figure {
+  display: block;
+  aspect-ratio: 4 / 3;
+  background: #fff;
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.figure img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  padding: 6px;
+}
+
+.figure:hover { border-color: var(--faint); }
+
+.meta {
+  font-family: var(--mono);
+  font-size: 13px;
+  color: var(--faint);
+  margin-bottom: 2px;
+}
+
+.project-text > p + p { margin-top: 6px; }
+
+.result {
+  font-weight: 600;
+}
 
 .stack {
   font-family: var(--mono);
   font-size: 13px;
   color: var(--faint);
-  margin-top: 4px;
 }
+
+.plinks {
+  display: flex;
+  gap: 18px;
+  font-size: 15px;
+}
+
+.private { color: var(--faint); }
 
 /* skills */
 
@@ -215,6 +271,12 @@ footer {
   .page { padding-top: 72px; }
 
   .entry { grid-template-columns: 140px 1fr; }
+
+  .project {
+    grid-template-columns: 300px 1fr;
+    gap: 28px;
+    align-items: start;
+  }
 
   .skills { grid-template-columns: 140px 1fr; }
 

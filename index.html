@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Javier Herrero Pérez, Data Scientist</title>
-  <meta name="description" content="Data scientist at Whizdom.ai with a background in Physics. Churn and survival models, data quality, MLOps and NLP. Experience, projects and CV.">
+  <meta name="description" content="Data scientist at Whizdom.ai with a background in Physics. Projects in churn and survival modelling, causal inference, NLP and deep learning, ordered by date.">
   <meta name="author" content="Javier Herrero Pérez">
   <link rel="canonical" href="https://jheivy.github.io/">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jheivy.github.io/">
   <meta property="og:title" content="Javier Herrero Pérez, Data Scientist">
-  <meta property="og:description" content="Churn and survival models, data quality, MLOps and NLP. Experience, projects and CV.">
+  <meta property="og:description" content="Projects in churn and survival modelling, causal inference, NLP and deep learning.">
   <meta property="og:image" content="https://jheivy.github.io/assets/images/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -43,6 +43,8 @@
         </div>
       </div>
 
+      <p class="lede" data-i18n="lede">I build churn and survival models for online gaming platforms, and before that I worked on NLP, causal inference and forecasting during my Master's in Data Science. Below are my projects, newest first.</p>
+
       <p class="links">
         <a href="mailto:jherrerop88@gmail.com">Email</a>
         <a href="https://www.linkedin.com/in/javier-herrero-p%C3%A9rez-ba672b271/" target="_blank" rel="noopener">LinkedIn</a>
@@ -53,10 +55,148 @@
 
     <main>
 
-      <section class="about" aria-labelledby="about-title">
-        <h2 id="about-title" data-i18n="about.title">About</h2>
-        <p data-i18n="about.p1">I studied Physics at the University of Salamanca and moved into data science because I wanted to keep doing what I liked about it: understand how a system works before trusting a result. I'm completing a Master's in Data Science at the University of Valencia.</p>
-        <p data-i18n="about.p2">Since August 2026 I work at Whizdom.ai on churn and survival models for online gaming platforms. A lot of the job is making sure the data means what we think it means, and then building simple models that hold up in production. I'm also interested in language models and agents.</p>
+      <section aria-labelledby="proj-title">
+        <h2 id="proj-title" data-i18n="proj.title">Projects</h2>
+
+        <p class="year">2026</p>
+
+        <article class="project">
+          <a class="figure" href="./assets/images/projects/whizdom.svg" target="_blank" rel="noopener">
+            <img src="./assets/images/projects/whizdom.svg" alt="Pipeline diagram: raw player activity, audit and leakage tests, features, LightGBM and Cox models, daily scores" width="480" height="360">
+          </a>
+          <div class="project-text">
+            <p class="meta" data-i18n="p.wz.meta">Aug 2026 – now, work at Whizdom.ai</p>
+            <h3 data-i18n="p.wz.t">Player churn and survival in production</h3>
+            <p data-i18n="p.wz.d">Predicts which players of an online gaming platform will stop playing and when. I audited the production data, defined churn from it, and built a calibrated LightGBM and a Cox survival model that score every player each day.</p>
+            <p class="result" data-i18n="p.wz.r">+0.2 AUC over the churn score that was in production</p>
+            <p class="stack">LightGBM, Cox PH, DuckDB, ClickHouse, MLflow, Feast, SHAP</p>
+            <p class="plinks"><span class="private" data-i18n="p.private">Code confidential</span></p>
+          </div>
+        </article>
+
+        <article class="project">
+          <a class="figure" href="./assets/images/projects/clickbait.jpg" target="_blank" rel="noopener">
+            <img src="./assets/images/projects/clickbait.jpg" alt="UMAP projection of headline embeddings, with clickbait and non clickbait headlines in different colours" width="891" height="900" loading="lazy">
+          </a>
+          <div class="project-text">
+            <p class="meta" data-i18n="p.nlp.meta">May 2026, Master's, team of 7</p>
+            <h3 data-i18n="p.nlp.t">Clickbait in Spanish news</h3>
+            <p data-i18n="p.nlp.d">Compares each headline with the text of its article across nine Spanish outlets, using embeddings and topic models. A LangChain agent scrapes new headlines and labels them on its own.</p>
+            <p class="stack">Python, Transformers, LangChain, UMAP</p>
+            <p class="plinks">
+              <a href="https://github.com/hepejav/ProyectoNLP" target="_blank" rel="noopener" data-i18n="l.code">Code</a>
+              <a href="https://github.com/hepejav/ProyectoNLP/blob/HEAD/grupo_4.pdf" target="_blank" rel="noopener" data-i18n="l.report">Report</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="project">
+          <a class="figure" href="./assets/images/projects/caloria.jpg" target="_blank" rel="noopener">
+            <img src="./assets/images/projects/caloria.jpg" alt="Example input: a bowl with rice, tomato, avocado and chicken" width="640" height="640" loading="lazy">
+          </a>
+          <div class="project-text">
+            <p class="meta" data-i18n="p.cal.meta">Mar 2026, Master's, team of 2</p>
+            <h3>CalorIA</h3>
+            <p data-i18n="p.cal.d">Estimates the calories of a meal from a photo. A vision language model identifies the foods and their portions, the nutrients come from the USDA database, and the day's intake is compared with the user's goal.</p>
+            <p class="stack">Python, Qwen2-VL, Hugging Face</p>
+            <p class="plinks">
+              <a href="https://github.com/hepejav/CalorIA" target="_blank" rel="noopener" data-i18n="l.code">Code</a>
+              <a href="https://github.com/hepejav/CalorIA/blob/HEAD/CalorIA_presentacion.pdf" target="_blank" rel="noopener" data-i18n="l.slides">Slides</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="project">
+          <a class="figure" href="./assets/images/projects/lalonde.jpg" target="_blank" rel="noopener">
+            <img src="./assets/images/projects/lalonde.jpg" alt="Propensity score distributions of treated and control groups before and after trimming" width="1000" height="400" loading="lazy">
+          </a>
+          <div class="project-text">
+            <p class="meta" data-i18n="p.lal.meta">Feb 2026, Master's</p>
+            <h3 data-i18n="p.lal.t">Does job training raise earnings?</h3>
+            <p data-i18n="p.lal.d">Causal analysis of the Lalonde data. The raw comparison suggests the programme lowers earnings because the groups are not comparable; propensity scores and trimming fix the overlap before estimating the effect.</p>
+            <p class="result" data-i18n="p.lal.r">Estimated effect after adjustment: about +2,200 USD in 1978 earnings</p>
+            <p class="stack">R, propensity score, regression</p>
+            <p class="plinks"><a href="https://github.com/hepejav/An-lisis-de-los-datos-de-Lalonde-1986-y-Dehejia-y-Wahba-1999-" target="_blank" rel="noopener" data-i18n="l.code">Code</a></p>
+          </div>
+        </article>
+
+        <article class="project">
+          <a class="figure" href="./assets/images/projects/telco.jpg" target="_blank" rel="noopener">
+            <img src="./assets/images/projects/telco.jpg" alt="Precision recall curve with three marked decision thresholds" width="900" height="636" loading="lazy">
+          </a>
+          <div class="project-text">
+            <p class="meta" data-i18n="p.tel.meta">Jan 2026, individual project</p>
+            <h3 data-i18n="p.tel.t">Telecom customer churn</h3>
+            <p data-i18n="p.tel.d">Churn classifier that uses billing anomalies, taken from the residuals of a regression, as features. A voting ensemble with a tuned threshold lets the business choose between precision and recall.</p>
+            <p class="result">AUC 0.85</p>
+            <p class="stack">Python, XGBoost, LightGBM, scikit-learn</p>
+            <p class="plinks"><a href="https://github.com/hepejav/Telco_Customer_Chrun" target="_blank" rel="noopener" data-i18n="l.code">Code</a></p>
+          </div>
+        </article>
+
+        <article class="project">
+          <a class="figure" href="./assets/images/projects/portfolio.jpg" target="_blank" rel="noopener">
+            <img src="./assets/images/projects/portfolio.jpg" alt="Mean variance frontier on the training returns with the chosen portfolio marked" width="1000" height="656" loading="lazy">
+          </a>
+          <div class="project-text">
+            <p class="meta" data-i18n="p.por.meta">Jan 2026, Master's</p>
+            <h3 data-i18n="p.por.t">Portfolio optimisation with AutoARIMA</h3>
+            <p data-i18n="p.por.d">One step ahead forecasts for five assets, with no look ahead bias, feed mean variance and log utility portfolios.</p>
+            <p class="result" data-i18n="p.por.r">Top grade in the course</p>
+            <p class="stack">R, forecast, quadprog, nloptr</p>
+            <p class="plinks"><a href="https://github.com/Jheivy/Portfolio-Optimization-ARIMA-LogUtility" target="_blank" rel="noopener" data-i18n="l.code">Code</a></p>
+          </div>
+        </article>
+
+        <p class="year">2025</p>
+
+        <article class="project">
+          <a class="figure" href="./assets/images/projects/labour-market.jpg" target="_blank" rel="noopener">
+            <img src="./assets/images/projects/labour-market.jpg" alt="Activity rate by age for men and women in Spain, showing the gender gap" width="900" height="900" loading="lazy">
+          </a>
+          <div class="project-text">
+            <p class="meta" data-i18n="p.aed.meta">Oct – Dec 2025, Master's, team project</p>
+            <h3 data-i18n="p.aed.t">Gender gap in the Spanish labour market</h3>
+            <p data-i18n="p.aed.d">Exploratory analysis of activity and unemployment in Spain by sex and age group since 2006, with animated charts that show how the gap changes over time.</p>
+            <p class="stack">R, tidyverse, ggplot2</p>
+            <p class="plinks">
+              <a href="https://github.com/hepejav/AED_proyecto" target="_blank" rel="noopener" data-i18n="l.code">Code</a>
+              <a href="https://github.com/hepejav/AED_proyecto/blob/HEAD/ProyectoAED.pdf" target="_blank" rel="noopener" data-i18n="l.report">Report</a>
+            </p>
+          </div>
+        </article>
+
+        <p class="year">2024</p>
+
+        <article class="project">
+          <a class="figure" href="./assets/images/projects/workplace-risk.jpg" target="_blank" rel="noopener">
+            <img src="./assets/images/projects/workplace-risk.jpg" alt="PCA of sensor readings coloured by risk level" width="900" height="664" loading="lazy">
+          </a>
+          <div class="project-text">
+            <p class="meta" data-i18n="p.air.meta">Jul – Aug 2024, internship at AIR Institute</p>
+            <h3 data-i18n="p.air.t">Workplace risk from air quality</h3>
+            <p data-i18n="p.air.d">Classifies the risk of a workspace into six levels from CO₂, temperature and humidity sensors, with time weighted exposure features and SMOTE for a 27 to 1 class imbalance.</p>
+            <p class="result">Macro F1 0.99</p>
+            <p class="stack">Python, scikit-learn, XGBoost, SHAP</p>
+            <p class="plinks"><a href="https://github.com/hepejav/Practicas_proyecto" target="_blank" rel="noopener" data-i18n="l.code">Code</a></p>
+          </div>
+        </article>
+
+        <article class="project">
+          <a class="figure" href="./assets/images/projects/sentiment.jpg" target="_blank" rel="noopener">
+            <img src="./assets/images/projects/sentiment.jpg" alt="Fitted exponential weight of each emotion on positive sentiment" width="900" height="547" loading="lazy">
+          </a>
+          <div class="project-text">
+            <p class="meta" data-i18n="p.sen.meta">Jul – Aug 2024, internship at AIR Institute</p>
+            <h3 data-i18n="p.sen.t">Sentiment in job interviews</h3>
+            <p data-i18n="p.sen.d">Emotion scores for 1,502 transcribed interview segments, an exponential model of how each emotion weighs on sentiment, and an analysis of each speaker's vocabulary.</p>
+            <p class="stack">Python, Whisper, pysentimiento</p>
+            <p class="plinks">
+              <a href="https://github.com/hepejav/Practicas_proyecto2" target="_blank" rel="noopener" data-i18n="l.code">Code</a>
+              <a href="https://github.com/hepejav/Practicas_proyecto2/blob/HEAD/practicas2.pdf" target="_blank" rel="noopener" data-i18n="l.report">Report</a>
+            </p>
+          </div>
+        </article>
       </section>
 
       <section aria-labelledby="exp-title">
@@ -67,11 +207,9 @@
           <div>
             <h3>AI Researcher &amp; Developer</h3>
             <p class="org" data-i18n="exp.w.org">Whizdom.ai, remote</p>
-            <p class="summary" data-i18n="exp.w.summary">Research and development of churn prediction for iGaming operators, from the raw data to production.</p>
             <ul class="points">
-              <li data-i18n="exp.w.1">Built a calibrated LightGBM churn model and a Cox survival model for 7, 14 and 30 day horizons. In an 11 month backtest it improves AUC by more than 0.2 over the score that was in production.</li>
-              <li data-i18n="exp.w.2">Audited the production features and found leakage and definition errors in recency, tenure and active days before they could reach the model.</li>
-              <li data-i18n="exp.w.3">Set up a reproducible pipeline that goes from raw data to daily player scores with one command, using DuckDB, ClickHouse, MLflow, Feast and Docker.</li>
+              <li data-i18n="exp.w.1">Churn and survival models for iGaming operators, from the raw data to daily scores in production.</li>
+              <li data-i18n="exp.w.2">Found leakage and definition errors in core production features before they reached the model.</li>
             </ul>
           </div>
         </div>
@@ -81,63 +219,8 @@
           <div>
             <h3 data-i18n="exp.a.role">Data Science Intern</h3>
             <p class="org">AIR Institute, Spain</p>
-            <ul class="points">
-              <li data-i18n="exp.a.1">Classified workplace risk from environmental sensor data with a Random Forest (macro F1 0.99) and explained its decisions with SHAP.</li>
-              <li data-i18n="exp.a.2">Extracted tone and emotion features from interview recordings with Whisper and pysentimiento to support candidate shortlisting.</li>
-            </ul>
+            <p class="summary" data-i18n="exp.a.summary">Two applied projects, workplace risk and interview sentiment, both listed above.</p>
           </div>
-        </div>
-      </section>
-
-      <section aria-labelledby="proj-title">
-        <h2 id="proj-title" data-i18n="proj.title">Projects</h2>
-
-        <div class="project">
-          <h3><a href="https://github.com/hepejav/Telco_Customer_Chrun" target="_blank" rel="noopener" data-i18n="proj.telco.t">Telco customer churn</a></h3>
-          <p data-i18n="proj.telco.d">Churn classifier that uses billing anomalies from regression residuals as features, with a voting ensemble and a tuned decision threshold. AUC 0.85.</p>
-          <p class="stack">Python, XGBoost, LightGBM, scikit-learn</p>
-        </div>
-
-        <div class="project">
-          <h3><a href="https://github.com/hepejav/ProyectoNLP" target="_blank" rel="noopener" data-i18n="proj.nlp.t">Clickbait in Spanish news</a></h3>
-          <p data-i18n="proj.nlp.d">Compared headlines with article text from nine Spanish outlets using embeddings and topic models, and built a LangChain agent that scrapes and labels new headlines. Team of seven.</p>
-          <p class="stack">Python, Transformers, LangChain, UMAP</p>
-        </div>
-
-        <div class="project">
-          <h3><a href="https://github.com/hepejav/CalorIA" target="_blank" rel="noopener">CalorIA</a></h3>
-          <p data-i18n="proj.cal.d">Estimates the calories of a meal from a photo. A vision language model identifies the foods and portions, and the nutrients come from the USDA database. Team of two.</p>
-          <p class="stack">Python, Qwen2-VL, Hugging Face</p>
-        </div>
-
-        <div class="project">
-          <h3><a href="https://github.com/hepejav/Practicas_proyecto" target="_blank" rel="noopener" data-i18n="proj.air.t">Workplace risk from air quality</a></h3>
-          <p data-i18n="proj.air.d">Six class risk classification from sensor data, with time weighted exposure features and SMOTE for a 27 to 1 class imbalance. Macro F1 0.99.</p>
-          <p class="stack">Python, scikit-learn, XGBoost, SHAP</p>
-        </div>
-
-        <div class="project">
-          <h3><a href="https://github.com/hepejav/An-lisis-de-los-datos-de-Lalonde-1986-y-Dehejia-y-Wahba-1999-" target="_blank" rel="noopener" data-i18n="proj.lal.t">Job training and earnings</a></h3>
-          <p data-i18n="proj.lal.d">Causal analysis of the Lalonde job training data: propensity scores, trimming to improve overlap and adjusted regression, checking each identification assumption.</p>
-          <p class="stack" data-i18n="proj.lal.s">Causal inference, propensity scores</p>
-        </div>
-
-        <div class="project">
-          <h3><a href="https://github.com/Jheivy/Portfolio-Optimization-ARIMA-LogUtility" target="_blank" rel="noopener" data-i18n="proj.port.t">Portfolio optimisation with AutoARIMA</a></h3>
-          <p data-i18n="proj.port.d">One step ahead forecasts with no look ahead bias feed mean variance and log utility portfolios. It got the top grade in the course.</p>
-          <p class="stack">R, forecast, quadprog, nloptr</p>
-        </div>
-
-        <div class="project">
-          <h3><a href="https://github.com/hepejav/Practicas_proyecto2" target="_blank" rel="noopener" data-i18n="proj.sent.t">Sentiment in job interviews</a></h3>
-          <p data-i18n="proj.sent.d">Emotion scores for 1,502 transcribed interview segments, combined with an exponential sentiment model and an analysis of each speaker's vocabulary.</p>
-          <p class="stack">Python, Whisper, pysentimiento</p>
-        </div>
-
-        <div class="project">
-          <h3><a href="https://github.com/hepejav/AED_proyecto" target="_blank" rel="noopener" data-i18n="proj.aed.t">Gender gap in the Spanish labour market</a></h3>
-          <p data-i18n="proj.aed.d">Exploratory analysis of activity and unemployment in Spain by sex and age group, with animated charts. Team project.</p>
-          <p class="stack">R, tidyverse, ggplot2</p>
         </div>
       </section>
 

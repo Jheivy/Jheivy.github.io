@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 480 360" font-family="IBM Plex Sans, Helvetica, Arial, sans-serif">
+  <title>Churn pipeline: raw data, audit, features, models, daily scores</title>
+  <rect width="480" height="360" fill="#ffffff"/>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0L10 5L0 10z" fill="#8a8780"/>
+    </marker>
+  </defs>
+  <g font-size="15" fill="#1b1b1b">
+    <rect x="40" y="28" width="400" height="44" rx="4" fill="none" stroke="#cfcac1"/>
+    <text x="60" y="56">Raw player activity</text>
+    <text x="420" y="56" text-anchor="end" font-family="IBM Plex Mono, Menlo, monospace" font-size="12" fill="#8a8780">S3, DuckDB</text>
+
+    <rect x="40" y="96" width="400" height="44" rx="4" fill="none" stroke="#cfcac1"/>
+    <text x="60" y="124">Audit and leakage tests</text>
+    <text x="420" y="124" text-anchor="end" font-family="IBM Plex Mono, Menlo, monospace" font-size="12" fill="#8a8780">as-of rule</text>
+
+    <rect x="40" y="164" width="400" height="44" rx="4" fill="none" stroke="#cfcac1"/>
+    <text x="60" y="192">Features per monthly cut</text>
+    <text x="420" y="192" text-anchor="end" font-family="IBM Plex Mono, Menlo, monospace" font-size="12" fill="#8a8780">Feast</text>
+
+    <rect x="40" y="232" width="400" height="44" rx="4" fill="#f3f6fb" stroke="#1f4e8c"/>
+    <text x="60" y="260" fill="#1f4e8c" font-weight="600">LightGBM + Cox PH</text>
+    <text x="420" y="260" text-anchor="end" font-family="IBM Plex Mono, Menlo, monospace" font-size="12" fill="#1f4e8c">calibrated</text>
+
+    <rect x="40" y="300" width="400" height="44" rx="4" fill="none" stroke="#cfcac1"/>
+    <text x="60" y="328">Daily scores with reasons</text>
+    <text x="420" y="328" text-anchor="end" font-family="IBM Plex Mono, Menlo, monospace" font-size="12" fill="#8a8780">SHAP, MLflow</text>
+  </g>
+  <g stroke="#8a8780" stroke-width="1.5" marker-end="url(#arrow)">
+    <line x1="240" y1="73" x2="240" y2="93"/>
+    <line x1="240" y1="141" x2="240" y2="161"/>
+    <line x1="240" y1="209" x2="240" y2="229"/>
+    <line x1="240" y1="277" x2="240" y2="297"/>
+  </g>
+</svg>
