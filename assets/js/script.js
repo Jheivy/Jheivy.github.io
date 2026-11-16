@@ -51,6 +51,9 @@ const es = {
   "p.sen.t": "Sentimiento en entrevistas de trabajo",
   "p.sen.d": "Puntuaciones de emoción para entrevistas transcritas, un modelo exponencial de cuánto pesa cada emoción en el sentimiento y un análisis del vocabulario de cada persona.",
 
+  "p.wz.n1": "+0,2 AUC",
+  "p.tel.n1": "0,85 AUC",
+  "p.air.n1": "0,99 F1",
   "p.wz.n": "sobre el score de abandono que había en producción",
   "p.nlp.n1": "9 medios",
   "p.nlp.n": "de prensa española comparados",
