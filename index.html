@@ -59,144 +59,116 @@
         <h2 id="proj-title" data-i18n="proj.title">Projects</h2>
 
         <p class="year">2026</p>
+        <div class="cards">
 
-        <article class="project">
-          <a class="figure" href="./assets/images/projects/whizdom.svg" target="_blank" rel="noopener">
-            <img src="./assets/images/projects/whizdom.svg" alt="Pipeline diagram: raw player activity, audit and leakage tests, features, LightGBM and Cox models, daily scores" width="480" height="360">
-          </a>
-          <div class="project-text">
-            <p class="meta" data-i18n="p.wz.meta">Aug 2026 – now, work at Whizdom.ai</p>
+          <article class="card featured">
+            <p class="figure-num">+0.2 AUC</p>
+            <p class="figure-note" data-i18n="p.wz.n">over the churn score that was in production</p>
             <h3 data-i18n="p.wz.t">Player churn and survival in production</h3>
+            <p class="meta" data-i18n="p.wz.meta">Aug 2026 – now, work at Whizdom.ai</p>
             <p data-i18n="p.wz.d">Predicts which players of an online gaming platform will stop playing and when. I audited the production data, defined churn from it, and built a calibrated LightGBM and a Cox survival model that score every player each day.</p>
-            <p class="result" data-i18n="p.wz.r">+0.2 AUC over the churn score that was in production</p>
             <p class="stack">LightGBM, Cox PH, DuckDB, ClickHouse, MLflow, Feast, SHAP</p>
             <p class="plinks"><span class="private" data-i18n="p.private">Code confidential</span></p>
-          </div>
-        </article>
+          </article>
 
-        <article class="project">
-          <a class="figure" href="./assets/images/projects/clickbait.jpg" target="_blank" rel="noopener">
-            <img src="./assets/images/projects/clickbait.jpg" alt="UMAP projection of headline embeddings, with clickbait and non clickbait headlines in different colours" width="891" height="900" loading="lazy">
-          </a>
-          <div class="project-text">
-            <p class="meta" data-i18n="p.nlp.meta">May 2026, Master's, team of 7</p>
+          <article class="card">
+            <p class="figure-num" data-i18n="p.nlp.n1">9 outlets</p>
+            <p class="figure-note" data-i18n="p.nlp.n">of Spanish news compared</p>
             <h3 data-i18n="p.nlp.t">Clickbait in Spanish news</h3>
-            <p data-i18n="p.nlp.d">Compares each headline with the text of its article across nine Spanish outlets, using embeddings and topic models. A LangChain agent scrapes new headlines and labels them on its own.</p>
+            <p class="meta" data-i18n="p.nlp.meta">May 2026, Master's, team of 7</p>
+            <p data-i18n="p.nlp.d">Compares each headline with the text of its article, using embeddings and topic models. A LangChain agent scrapes new headlines and labels them on its own.</p>
             <p class="stack">Python, Transformers, LangChain, UMAP</p>
             <p class="plinks">
               <a href="https://github.com/hepejav/ProyectoNLP" target="_blank" rel="noopener" data-i18n="l.code">Code</a>
               <a href="https://github.com/hepejav/ProyectoNLP/blob/HEAD/grupo_4.pdf" target="_blank" rel="noopener" data-i18n="l.report">Report</a>
             </p>
-          </div>
-        </article>
+          </article>
 
-        <article class="project">
-          <a class="figure" href="./assets/images/projects/caloria.jpg" target="_blank" rel="noopener">
-            <img src="./assets/images/projects/caloria.jpg" alt="Example input: a bowl with rice, tomato, avocado and chicken" width="640" height="640" loading="lazy">
-          </a>
-          <div class="project-text">
-            <p class="meta" data-i18n="p.cal.meta">Mar 2026, Master's, team of 2</p>
+          <article class="card">
+            <p class="figure-num" data-i18n="p.cal.n1">Photo → kcal</p>
+            <p class="figure-note" data-i18n="p.cal.n">with a vision language model</p>
             <h3>CalorIA</h3>
-            <p data-i18n="p.cal.d">Estimates the calories of a meal from a photo. A vision language model identifies the foods and their portions, the nutrients come from the USDA database, and the day's intake is compared with the user's goal.</p>
+            <p class="meta" data-i18n="p.cal.meta">Mar 2026, Master's, team of 2</p>
+            <p data-i18n="p.cal.d">Estimates the calories of a meal from a photo. The model identifies the foods and their portions, the nutrients come from the USDA database, and the day's intake is compared with the user's goal.</p>
             <p class="stack">Python, Qwen2-VL, Hugging Face</p>
             <p class="plinks">
               <a href="https://github.com/hepejav/CalorIA" target="_blank" rel="noopener" data-i18n="l.code">Code</a>
               <a href="https://github.com/hepejav/CalorIA/blob/HEAD/CalorIA_presentacion.pdf" target="_blank" rel="noopener" data-i18n="l.slides">Slides</a>
             </p>
-          </div>
-        </article>
+          </article>
 
-        <article class="project">
-          <a class="figure" href="./assets/images/projects/lalonde.jpg" target="_blank" rel="noopener">
-            <img src="./assets/images/projects/lalonde.jpg" alt="Propensity score distributions of treated and control groups before and after trimming" width="1000" height="400" loading="lazy">
-          </a>
-          <div class="project-text">
-            <p class="meta" data-i18n="p.lal.meta">Feb 2026, Master's</p>
+          <article class="card">
+            <p class="figure-num" data-i18n="p.lal.n1">+2,200 USD</p>
+            <p class="figure-note" data-i18n="p.lal.n">estimated effect on 1978 earnings</p>
             <h3 data-i18n="p.lal.t">Does job training raise earnings?</h3>
+            <p class="meta" data-i18n="p.lal.meta">Feb 2026, Master's</p>
             <p data-i18n="p.lal.d">Causal analysis of the Lalonde data. The raw comparison suggests the programme lowers earnings because the groups are not comparable; propensity scores and trimming fix the overlap before estimating the effect.</p>
-            <p class="result" data-i18n="p.lal.r">Estimated effect after adjustment: about +2,200 USD in 1978 earnings</p>
             <p class="stack">R, propensity score, regression</p>
             <p class="plinks"><a href="https://github.com/hepejav/An-lisis-de-los-datos-de-Lalonde-1986-y-Dehejia-y-Wahba-1999-" target="_blank" rel="noopener" data-i18n="l.code">Code</a></p>
-          </div>
-        </article>
+          </article>
 
-        <article class="project">
-          <a class="figure" href="./assets/images/projects/telco.jpg" target="_blank" rel="noopener">
-            <img src="./assets/images/projects/telco.jpg" alt="Precision recall curve with three marked decision thresholds" width="900" height="636" loading="lazy">
-          </a>
-          <div class="project-text">
-            <p class="meta" data-i18n="p.tel.meta">Jan 2026, individual project</p>
+          <article class="card">
+            <p class="figure-num">0.85 AUC</p>
+            <p class="figure-note" data-i18n="p.tel.n">with a tuned decision threshold</p>
             <h3 data-i18n="p.tel.t">Telecom customer churn</h3>
-            <p data-i18n="p.tel.d">Churn classifier that uses billing anomalies, taken from the residuals of a regression, as features. A voting ensemble with a tuned threshold lets the business choose between precision and recall.</p>
-            <p class="result">AUC 0.85</p>
+            <p class="meta" data-i18n="p.tel.meta">Jan 2026, individual project</p>
+            <p data-i18n="p.tel.d">Churn classifier that uses billing anomalies, taken from the residuals of a regression, as features. A voting ensemble lets the business choose between precision and recall.</p>
             <p class="stack">Python, XGBoost, LightGBM, scikit-learn</p>
             <p class="plinks"><a href="https://github.com/hepejav/Telco_Customer_Chrun" target="_blank" rel="noopener" data-i18n="l.code">Code</a></p>
-          </div>
-        </article>
+          </article>
 
-        <article class="project">
-          <a class="figure" href="./assets/images/projects/portfolio.jpg" target="_blank" rel="noopener">
-            <img src="./assets/images/projects/portfolio.jpg" alt="Mean variance frontier on the training returns with the chosen portfolio marked" width="1000" height="656" loading="lazy">
-          </a>
-          <div class="project-text">
-            <p class="meta" data-i18n="p.por.meta">Jan 2026, Master's</p>
+          <article class="card">
+            <p class="figure-num" data-i18n="p.por.n1">Top grade</p>
+            <p class="figure-note" data-i18n="p.por.n">in the course</p>
             <h3 data-i18n="p.por.t">Portfolio optimisation with AutoARIMA</h3>
+            <p class="meta" data-i18n="p.por.meta">Jan 2026, Master's</p>
             <p data-i18n="p.por.d">One step ahead forecasts for five assets, with no look ahead bias, feed mean variance and log utility portfolios.</p>
-            <p class="result" data-i18n="p.por.r">Top grade in the course</p>
             <p class="stack">R, forecast, quadprog, nloptr</p>
             <p class="plinks"><a href="https://github.com/Jheivy/Portfolio-Optimization-ARIMA-LogUtility" target="_blank" rel="noopener" data-i18n="l.code">Code</a></p>
-          </div>
-        </article>
+          </article>
+
+        </div>
 
         <p class="year">2025</p>
+        <div class="cards">
 
-        <article class="project">
-          <a class="figure" href="./assets/images/projects/labour-market.jpg" target="_blank" rel="noopener">
-            <img src="./assets/images/projects/labour-market.jpg" alt="Activity rate by age for men and women in Spain, showing the gender gap" width="900" height="900" loading="lazy">
-          </a>
-          <div class="project-text">
-            <p class="meta" data-i18n="p.aed.meta">Oct – Dec 2025, Master's, team project</p>
+          <article class="card">
+            <p class="figure-num" data-i18n="p.aed.n1">Since 2006</p>
+            <p class="figure-note" data-i18n="p.aed.n">of labour data by sex and age</p>
             <h3 data-i18n="p.aed.t">Gender gap in the Spanish labour market</h3>
-            <p data-i18n="p.aed.d">Exploratory analysis of activity and unemployment in Spain by sex and age group since 2006, with animated charts that show how the gap changes over time.</p>
+            <p class="meta" data-i18n="p.aed.meta">Oct – Dec 2025, Master's, team project</p>
+            <p data-i18n="p.aed.d">Exploratory analysis of activity and unemployment in Spain, with animated charts that show how the gap between men and women changes over time.</p>
             <p class="stack">R, tidyverse, ggplot2</p>
             <p class="plinks">
               <a href="https://github.com/hepejav/AED_proyecto" target="_blank" rel="noopener" data-i18n="l.code">Code</a>
               <a href="https://github.com/hepejav/AED_proyecto/blob/HEAD/ProyectoAED.pdf" target="_blank" rel="noopener" data-i18n="l.report">Report</a>
             </p>
-          </div>
-        </article>
+          </article>
+
+        </div>
 
         <p class="year">2024</p>
+        <div class="cards">
 
-        <article class="project">
-          <a class="figure" href="./assets/images/projects/workplace-risk.jpg" target="_blank" rel="noopener">
-            <img src="./assets/images/projects/workplace-risk.jpg" alt="PCA of sensor readings coloured by risk level" width="900" height="664" loading="lazy">
-          </a>
-          <div class="project-text">
-            <p class="meta" data-i18n="p.air.meta">Jul – Aug 2024, internship at AIR Institute</p>
+          <article class="card">
+            <p class="figure-num">0.99 F1</p>
+            <p class="figure-note" data-i18n="p.air.n">macro, across six risk levels</p>
             <h3 data-i18n="p.air.t">Workplace risk from air quality</h3>
-            <p data-i18n="p.air.d">Classifies the risk of a workspace into six levels from CO₂, temperature and humidity sensors, with time weighted exposure features and SMOTE for a 27 to 1 class imbalance.</p>
-            <p class="result">Macro F1 0.99</p>
+            <p class="meta" data-i18n="p.air.meta">Jul – Aug 2024, internship at AIR Institute</p>
+            <p data-i18n="p.air.d">Classifies the risk of a workspace from CO₂, temperature and humidity sensors, with time weighted exposure features and SMOTE for a 27 to 1 class imbalance.</p>
             <p class="stack">Python, scikit-learn, XGBoost, SHAP</p>
-            <p class="plinks"><a href="https://github.com/hepejav/Practicas_proyecto" target="_blank" rel="noopener" data-i18n="l.code">Code</a></p>
-          </div>
-        </article>
+          </article>
 
-        <article class="project">
-          <a class="figure" href="./assets/images/projects/sentiment.jpg" target="_blank" rel="noopener">
-            <img src="./assets/images/projects/sentiment.jpg" alt="Fitted exponential weight of each emotion on positive sentiment" width="900" height="547" loading="lazy">
-          </a>
-          <div class="project-text">
-            <p class="meta" data-i18n="p.sen.meta">Jul – Aug 2024, internship at AIR Institute</p>
+          <article class="card">
+            <p class="figure-num" data-i18n="p.sen.n1">1,502</p>
+            <p class="figure-note" data-i18n="p.sen.n">interview segments analysed</p>
             <h3 data-i18n="p.sen.t">Sentiment in job interviews</h3>
-            <p data-i18n="p.sen.d">Emotion scores for 1,502 transcribed interview segments, an exponential model of how each emotion weighs on sentiment, and an analysis of each speaker's vocabulary.</p>
+            <p class="meta" data-i18n="p.sen.meta">Jul – Aug 2024, internship at AIR Institute</p>
+            <p data-i18n="p.sen.d">Emotion scores for transcribed interviews, an exponential model of how each emotion weighs on sentiment, and an analysis of each speaker's vocabulary.</p>
             <p class="stack">Python, Whisper, pysentimiento</p>
-            <p class="plinks">
-              <a href="https://github.com/hepejav/Practicas_proyecto2" target="_blank" rel="noopener" data-i18n="l.code">Code</a>
-              <a href="https://github.com/hepejav/Practicas_proyecto2/blob/HEAD/practicas2.pdf" target="_blank" rel="noopener" data-i18n="l.report">Report</a>
-            </p>
-          </div>
-        </article>
+          </article>
+
+        </div>
       </section>
 
       <section aria-labelledby="exp-title">
