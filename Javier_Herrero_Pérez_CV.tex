@@ -1,157 +1,115 @@
-\documentclass[letterpaper,10pt]{article}
+\documentclass[a4paper,10pt]{article}
 
-\usepackage{latexsym}
-\usepackage[empty]{fullpage}
-\usepackage{titlesec}
-\usepackage{marvosym}
-\usepackage[usenames,dvipsnames]{color}
+% ---------- layout and fonts ----------
+\usepackage[a4paper,left=1.7cm,right=1.7cm,top=1.3cm,bottom=1.2cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[sfdefault]{plex-sans}
+\usepackage[english]{babel}
 \usepackage{xcolor}
-\definecolor{accent}{HTML}{1565C0}
-\usepackage{verbatim}
 \usepackage{enumitem}
 \usepackage[hidelinks]{hyperref}
-\usepackage{fancyhdr}
-\usepackage[english]{babel}
-\usepackage{tabularx}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
 \input{glyphtounicode}
-
-% Font options
-% \usepackage[sfdefault]{roboto}  % Sans-serif font
-
-\pagestyle{fancy}
-\fancyhf{}
-\fancyfoot{}
-\renewcommand{\headrulewidth}{0pt}
-\renewcommand{\footrulewidth}{0pt}
-
-\addtolength{\oddsidemargin}{-0.5in}
-\addtolength{\evensidemargin}{-0.5in}
-\addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
-\addtolength{\textheight}{1.0in}
-\setlength{\footskip}{4pt}
-
-\urlstyle{same}
-\raggedbottom
-\raggedright
-\setlength{\tabcolsep}{0in}
-
-% Section formatting
-\titleformat{\section}{\large\bfseries\scshape\raggedright\color{accent}}{}{0em}{}[{\color{accent}\titlerule}]
-\titlespacing*{\section}{0pt}{8pt}{4pt}
-
-% Ensure PDF is machine readable
 \pdfgentounicode=1
 
-% Custom commands
-\newcommand{\resumeItem}[1]{\item\small{#1}}
-\newcommand{\resumeSubheading}[4]{
-\vspace{-1pt}\item
-  \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-    \textbf{#1} & #2 \\
-    \textit{#3} & \textit{#4} \\
-  \end{tabular*}\vspace{-4pt}
-}
-\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-\newcommand{\resumeSubHeadingList}{\begin{itemize}[leftmargin=0.1in, label={}, topsep=3pt, itemsep=3pt, parsep=0pt]}
-\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\definecolor{ink}{HTML}{1B1B1B}
+\definecolor{muted}{HTML}{5F5F5F}
+\definecolor{accent}{HTML}{1F4E8C}
+\definecolor{rule}{HTML}{D9D4CB}
+
+\pagestyle{empty}
+\setlength{\parindent}{0pt}
+\linespread{1.08}
+\raggedright
+\hyphenpenalty=10000
+\exhyphenpenalty=10000
+\color{ink}
+
+\hypersetup{pdftitle={Javier Herrero Pérez, CV}, pdfauthor={Javier Herrero Pérez}}
+
+% ---------- building blocks ----------
+\newcommand{\sectionhead}[1]{%
+  \vspace{8pt}{\color{accent}\fontsize{11.5}{14}\selectfont\bfseries #1}\par
+  \vspace{3pt}{\color{rule}\hrule height 0.5pt}\vspace{6pt}}
+
+% role, dates, organisation, place
+\newcommand{\entry}[4]{%
+  {\bfseries #1}\hfill{\color{muted}#2}\par
+  {\color{muted}#3}\hfill{\color{muted}#4}\par\vspace{1pt}}
+
+% title, link, date and context, description, tools
+\newcommand{\project}[5]{%
+  {\bfseries\href{#2}{#1}}\hfill{\color{muted}#3}\par
+  #4\par
+  {\color{muted}\small #5}\par\vspace{5pt}}
+
+% label, items
+\newcommand{\skill}[2]{\makebox[3.7cm][l]{\color{muted}#1}#2\par\vspace{1pt}}
+
+\setlist[itemize]{leftmargin=11pt, itemsep=1pt, topsep=2pt, parsep=0pt,
+  label={\color{muted}\raisebox{0.15ex}{\scriptsize\textbullet}}}
 
 \begin{document}
 
-\begin{center}
-  {\color{accent}\textbf{\Huge Javier Herrero Pérez}} \\[5pt]
-  \small
-  656\,181\,225 \quad
-  \href{mailto:jherrerop88@gmail.com}{jherrerop88@gmail.com} \\[3pt]
-  \href{https://www.linkedin.com/in/javier-herrero-p\%C3\%A9rez-ba672b271/}{linkedin.com/in/javier-herrero-pérez}
-  \quad
-  \href{https://github.com/Jheivy}{github.com/Jheivy}
-  \quad
-  \textbf{\href{https://jheivy.github.io/}{jheivy.github.io}}
-\end{center}
+% ---------- header ----------
+{\fontsize{22}{26}\selectfont\bfseries Javier Herrero Pérez}\par
+\vspace{3pt}
+{\large\color{muted} Data Scientist}\par
+\vspace{6pt}
+{\small
+Salamanca, Spain\quad
+656\,181\,225\quad
+\href{mailto:jherrerop88@gmail.com}{jherrerop88@gmail.com}\quad
+\href{https://www.linkedin.com/in/javier-herrero-p\%C3\%A9rez-ba672b271/}{\color{accent}LinkedIn}\quad
+\href{https://github.com/Jheivy}{\color{accent}github.com/Jheivy}\quad
+\href{https://jheivy.github.io/}{\color{accent}jheivy.github.io}\par}
 
-\section{About me}
-% I hold a degree in Physics from the University of Salamanca, with a strong foundation in mathematical modelling, statistics and data analysis. I am currently pursuing a Master’s degree in Data Science at the University of Valencia and have gained hands-on experience in applied data science during an internship at the AIR Institute, working on real-world AI and data projects.
-% I have practical experience with Python, machine learning and natural language processing, and I am seeking junior roles in Data Science or related fields.
-I studied Physics at the University of Salamanca and moved into data science because I wanted to keep doing what I liked about it: understand how a system works before trusting a result. Since August 2026 I work as an AI Researcher \& Developer at Whizdom.ai on churn and survival models, alongside my Master's in Data Science at the University of Valencia. A lot of the job is making sure the data means what we think it means, and then building simple models that hold up in production. I'm also interested in language models and agents.
+% ---------- profile ----------
+\sectionhead{Profile}
+Data scientist with a degree in Physics. I work at Whizdom.ai and I am completing an MSc in Data Science at the University of Valencia, with only the thesis left. Interested in machine learning in production, causal inference and language models.
 
+% ---------- experience ----------
+\sectionhead{Experience}
+\entry{AI Researcher \& Developer}{Aug 2026 -- present}{Whizdom.ai}{Remote}
+\begin{itemize}
+  \item Research and development of machine learning models for an iGaming analytics product, from data preparation to production.
+  \item Large-scale data and a reproducible MLOps workflow: Python, SQL, experiment tracking, containers.
+\end{itemize}
+\vspace{6pt}
+\entry{Data Science Intern}{Jul -- Aug 2024}{AIR Institute}{Spain}
+\begin{itemize}
+  \item Applied machine learning projects on environmental sensor data and on interview transcripts: classification, NLP and model explainability.
+\end{itemize}
 
-\section{Technical Skills}
-\resumeSubHeadingList
-    \resumeItem{\textbf{Programming}: Python, SQL, R, Fortran}
-  \resumeItem{\textbf{Data \& ML}: NumPy, Pandas, Scikit-learn, LightGBM, XGBoost, SHAP, Optuna, Survival Analysis (Cox PH, Kaplan--Meier)}
-  \resumeItem{\textbf{Deep Learning Frameworks}: TensorFlow, PyTorch, Keras}
-  \resumeItem{\textbf{Data Engineering}: DuckDB, ClickHouse, AWS S3, MongoDB, Cassandra, Great Expectations, pandera}
-  \resumeItem{\textbf{MLOps \& Tools}: Git, Docker, MLflow, Kedro, Feast, FastAPI, BentoML, Streamlit, Jira, LaTeX}
-    \resumeItem{\textbf{Languages}: Spanish (native), English (B1+: Professional communication and technical proficiency)}
-\resumeSubHeadingListEnd
+% ---------- education ----------
+\sectionhead{Education}
+\entry{MSc in Data Science}{Sep 2025 -- present}{University of Valencia, GPA 8.86/10, thesis in progress}{Spain}
+\vspace{4pt}
+\entry{BSc in Physics}{Sep 2021 -- Jul 2025}{University of Salamanca, GPA 7.25/10}{Spain}
 
+% ---------- projects ----------
+\sectionhead{Selected projects}
+\project{Clickbait in Spanish news}{https://github.com/hepejav/ProyectoNLP}{May 2026, team of 7}
+  {Compared headlines with article text across nine Spanish outlets using embeddings and topic models, and built a LangChain agent that scrapes and labels new headlines.}
+  {Python, Transformers, LangChain, UMAP}
+\project{CalorIA: calories from a photo}{https://github.com/hepejav/CalorIA}{Mar 2026, team of 2}
+  {A vision language model (Qwen2-VL) identifies foods and portions in a meal photo; nutrients come from the USDA database and are compared with the user's daily goal.}
+  {Python, Hugging Face, LLMs}
+\project{Does job training raise earnings?}{https://github.com/hepejav/An-lisis-de-los-datos-de-Lalonde-1986-y-Dehejia-y-Wahba-1999-}{Feb 2026}
+  {Causal analysis of the Lalonde data: propensity scores and trimming to restore overlap, then adjusted regression. Estimated effect of about +2,200 USD on 1978 earnings.}
+  {R, causal inference}
+\project{Telecom customer churn}{https://github.com/hepejav/Telco_Customer_Chrun}{Jan 2026}
+  {Churn classifier with billing anomaly features from regression residuals and a voting ensemble with a tuned threshold. AUC 0.85.}
+  {Python, XGBoost, LightGBM, scikit-learn}
+\project{Portfolio optimisation with AutoARIMA}{https://github.com/Jheivy/Portfolio-Optimization-ARIMA-LogUtility}{Jan 2026}
+  {One step ahead forecasts without look ahead bias feed mean variance and log utility portfolios. Top grade.}
+  {R, forecast, quadprog}
 
-\section{Experience}
-\resumeSubHeadingList
-
-\resumeSubheading
-    {AI Researcher \& Developer}{Aug 2026 -- Present}
-    {Whizdom.ai (AI for iGaming)}{Remote}
-    \resumeSubHeadingList
-        \resumeItem{\textbullet~\textbf{Player Churn Prediction:} Built an end-to-end churn system on large-scale player-activity data (DuckDB/ClickHouse over AWS S3): a per-brand calibrated LightGBM plus a stratified Cox PH survival model for 7/14/30-day horizons. In an 11-month rolling backtest it \textbf{improved AUC by more than 0.2 over the churn score already in production} and by \textbf{0.10--0.12 over the recency baseline}, beating it in every brand and month.}
-        \resumeItem{\textbullet~\textbf{Production Data Audit:} Reviewed every production feature and uncovered leakage and definition errors in core variables (recency, tenure, active days) that would have produced a misleadingly perfect model. Introduced an as-of feature rule and an automated leakage test.}
-        \resumeItem{\textbullet~\textbf{Business Value:} Redefined churn from the data (60-day inactivity, backed by Kaplan--Meier curves and return-rate analysis). In a simulated retention campaign, ranking players by the model's value at risk reached \textbf{6--7 percentage points more at-risk revenue than value-weighted recency targeting}.}
-        \resumeItem{\textbullet~\textbf{MLOps:} Delivered a reproducible one-command pipeline from raw data to daily player scores with SHAP-based reasons (MLflow, Feast, Kedro, FastAPI, BentoML, Docker), with data-quality gates in Great Expectations and pandera. Cut raw-data loading time \textbf{by over 20$\times$} with DuckDB.}
-    \resumeSubHeadingListEnd
-
-\resumeSubheading
-    {Data Scientist | Internship}{Jul 2024 -- Aug 2024}
-    {AIR Institute (International Centre for Artificial Intelligence Research)}{Spain}
-    \resumeSubHeadingList
-        \resumeItem{\textbullet~\textbf{Workplace Risk Classification:} Built a 6-class risk detection pipeline from raw sensor data (temporal exposure features, SMOTE for a 27:1 imbalance, Random Forest with \textbf{macro F1 = 0.99}) and used SHAP to show that CO$_2$ and cumulative exposure were the dominant drivers. Also trained an XGBoost regressor to predict CO$_2$ (\textbf{MAE = 27.74\,ppm}, $<$6\% error).}
-        \resumeItem{\textbullet~\textbf{Candidate Profiling (NLP):} Built a feature extraction pipeline with Whisper and PySentimiento to pull tone, emotion and linguistic signals from candidate interviews; the features fed a shortlisting classifier and measurably improved its precision and recall.}
-    \resumeSubHeadingListEnd
-
-\resumeSubHeadingListEnd
-
-\section{Projects}
-\resumeSubHeadingList
-
-% \resumeSubheading
-% {Multi-Agent System for Synchronous Energy Dispatch in Smart Grids}{Present}{}{}
-% \resumeSubHeadingList
-%     \resumeItem{{\small Developed a multi-agent framework using LangGraph to optimize synchronous power dispatch and grid stability under high renewable volatility (Python, TensorFlow, Transformers, statsmodels, LangGraph).}}
-% \resumeSubHeadingListEnd
-
-\resumeItem{\textbf{Clickbait Detection in News Headlines:} Developed an NLP pipeline to detect clickbait using cosine similarity and topic modelling (Python, Scikit-learn, Transformers). Built a LangChain agent that autonomously scrapes news headlines and classifies them as clickbait or not in an end-to-end workflow.}
-
-\resumeItem{\textbf{Calorie Estimation from Food Images:} Estimates the calories of a meal from a photo: a vision language model (Qwen2-VL) identifies foods and portions, and nutrients come from the USDA database (Python, Hugging Face).}
-
-\resumeItem{\textbf{Exploratory Analysis of Labour Market Data:} Performed EDA on Spanish labour market data to identify gender inequality patterns (R, tidyverse, ggplot2).}
-
-\resumeSubHeadingListEnd
-
-% \resumeSubheading
-%     {Causal Inference on Lalonde Dataset}{2025}
-%     {Causal Analysis Project}{Python, DoubleML, Scikit-learn}
-%     \resumeSubHeadingList
-%         \resumeItem{\textbullet\ Estimated treatment effects using causal inference techniques on observational data}
-%         \resumeItem{\textbullet\ Applied propensity score matching, class balancing, and meta-learners}
-%         \resumeItem{\textbullet\ Evaluated bias reduction and robustness of different causal models}
-%     \resumeSubHeadingListEnd
-
-\section{Education}
-\resumeSubHeadingList
-
-\resumeSubheading
-    {Master’s in Data Science}{Sept 2025 - Jun 2026 (expected)}
-    {University of Valencia, GPA 8.86/10}{Spain}
-
-\resumeSubheading
-    {Bachelor’s Degree in Physics}{Sept 2021 - Jul 2025}
-    {University of Salamanca, GPA 7.25/10}{Spain}
-
-
-\resumeSubHeadingListEnd
-
-
+% ---------- skills ----------
+\sectionhead{Skills}
+\skill{Programming}{Python, SQL, R}
+\skill{Modelling}{scikit-learn, LightGBM, XGBoost, SHAP, survival analysis, causal inference}
+\skill{Deep learning, NLP}{PyTorch, TensorFlow, Hugging Face, LangChain}
+\skill{Data and MLOps}{DuckDB, AWS S3, MLflow, Docker, FastAPI, Git}
+\skill{Languages}{Spanish (native), English (B1+, working proficiency)}
 
 \end{document}

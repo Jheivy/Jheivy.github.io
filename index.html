@@ -5,14 +5,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Javier Herrero Pérez, Data Scientist</title>
-  <meta name="description" content="Data scientist at Whizdom.ai with a background in Physics. Projects in churn and survival modelling, causal inference, NLP and deep learning, ordered by date.">
+  <meta name="description" content="Data scientist with a background in Physics. Projects in NLP, causal inference, forecasting and deep learning, plus experience and CV.">
   <meta name="author" content="Javier Herrero Pérez">
   <link rel="canonical" href="https://jheivy.github.io/">
 
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://jheivy.github.io/">
   <meta property="og:title" content="Javier Herrero Pérez, Data Scientist">
-  <meta property="og:description" content="Projects in churn and survival modelling, causal inference, NLP and deep learning.">
+  <meta property="og:description" content="Projects in NLP, causal inference, forecasting and deep learning, plus experience and CV.">
   <meta property="og:image" content="https://jheivy.github.io/assets/images/og-image.jpg">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
@@ -22,7 +22,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400&family=IBM+Plex+Sans:wght@400;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css?v=4">
+  <link rel="stylesheet" href="./assets/css/style.css?v=5">
 </head>
 
 <body>
@@ -43,7 +43,8 @@
         </div>
       </div>
 
-      <p class="lede" data-i18n="lede">I build churn and survival models for online gaming platforms, and before that I worked on NLP, causal inference and forecasting during my Master's in Data Science. Below are my projects, newest first.</p>
+      <!-- Javier: write your own introduction here, and its Spanish version in assets/js/script.js (key "lede"). -->
+      <p class="lede" data-i18n="lede">Physicist turned data scientist. I work at Whizdom.ai and I'm finishing my Master's in Data Science at the University of Valencia.</p>
 
       <p class="links">
         <a href="mailto:jherrerop88@gmail.com">Email</a>
@@ -58,114 +59,84 @@
       <section aria-labelledby="proj-title">
         <h2 id="proj-title" data-i18n="proj.title">Projects</h2>
 
-        <p class="year">2026</p>
         <div class="cards">
 
-          <article class="card featured">
-            <p class="figure-num" data-i18n="p.wz.n1">+0.2 AUC</p>
-            <p class="figure-note" data-i18n="p.wz.n">over the churn score that was in production</p>
-            <h3 data-i18n="p.wz.t">Player churn and survival in production</h3>
-            <p class="meta" data-i18n="p.wz.meta">Aug 2026 – now, work at Whizdom.ai</p>
-            <p data-i18n="p.wz.d">Predicts which players of an online gaming platform will stop playing and when. I audited the production data, defined churn from it, and built a calibrated LightGBM and a Cox survival model that score every player each day.</p>
-            <p class="stack">LightGBM, Cox PH, DuckDB, ClickHouse, MLflow, Feast, SHAP</p>
-            <p class="plinks"><span class="private" data-i18n="p.private">Code confidential</span></p>
-          </article>
-
           <article class="card">
-            <p class="figure-num" data-i18n="p.nlp.n1">9 outlets</p>
-            <p class="figure-note" data-i18n="p.nlp.n">of Spanish news compared</p>
+            <div class="card-top">
+              <p class="meta" data-i18n="p.nlp.meta">May 2026, Master's, team of 7</p>
+              <p class="icons">
+                <a class="icon" href="https://github.com/hepejav/ProyectoNLP" target="_blank" rel="noopener" aria-label="Code on GitHub" title="Code on GitHub" data-i18n-label="l.code"><svg viewBox="0 0 16 16" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+                <a class="icon" href="https://github.com/hepejav/ProyectoNLP/blob/HEAD/grupo_4.pdf" target="_blank" rel="noopener" aria-label="Report (PDF)" title="Report (PDF)" data-i18n-label="l.report"><svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16h-9.5A1.75 1.75 0 0 1 2 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 9 4.25V1.5Zm6.75.062V4.25c0 .138.112.25.25.25h2.688l-.011-.013-2.914-2.914-.013-.011Z"/></svg></a>
+              </p>
+            </div>
             <h3 data-i18n="p.nlp.t">Clickbait in Spanish news</h3>
-            <p class="meta" data-i18n="p.nlp.meta">May 2026, Master's, team of 7</p>
-            <p data-i18n="p.nlp.d">Compares each headline with the text of its article, using embeddings and topic models. A LangChain agent scrapes new headlines and labels them on its own.</p>
+            <p class="desc" data-i18n="p.nlp.d">Compares each headline with the text of its article across nine Spanish outlets, using embeddings and topic models. A LangChain agent scrapes new headlines and labels them on its own.</p>
             <p class="stack">Python, Transformers, LangChain, UMAP</p>
-            <p class="plinks">
-              <a href="https://github.com/hepejav/ProyectoNLP" target="_blank" rel="noopener" data-i18n="l.code">Code</a>
-              <a href="https://github.com/hepejav/ProyectoNLP/blob/HEAD/grupo_4.pdf" target="_blank" rel="noopener" data-i18n="l.report">Report</a>
-            </p>
           </article>
 
           <article class="card">
-            <p class="figure-num" data-i18n="p.cal.n1">Photo → kcal</p>
-            <p class="figure-note" data-i18n="p.cal.n">with a vision language model</p>
+            <div class="card-top">
+              <p class="meta" data-i18n="p.cal.meta">Mar 2026, Master's, team of 2</p>
+              <p class="icons">
+                <a class="icon" href="https://github.com/hepejav/CalorIA" target="_blank" rel="noopener" aria-label="Code on GitHub" title="Code on GitHub" data-i18n-label="l.code"><svg viewBox="0 0 16 16" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+                <a class="icon" href="https://github.com/hepejav/CalorIA/blob/HEAD/CalorIA_presentacion.pdf" target="_blank" rel="noopener" aria-label="Slides (PDF)" title="Slides (PDF)" data-i18n-label="l.slides"><svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16h-9.5A1.75 1.75 0 0 1 2 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 9 4.25V1.5Zm6.75.062V4.25c0 .138.112.25.25.25h2.688l-.011-.013-2.914-2.914-.013-.011Z"/></svg></a>
+              </p>
+            </div>
             <h3>CalorIA</h3>
-            <p class="meta" data-i18n="p.cal.meta">Mar 2026, Master's, team of 2</p>
-            <p data-i18n="p.cal.d">Estimates the calories of a meal from a photo. The model identifies the foods and their portions, the nutrients come from the USDA database, and the day's intake is compared with the user's goal.</p>
+            <p class="desc" data-i18n="p.cal.d">Estimates the calories of a meal from a photo. A vision language model identifies the foods and their portions, the nutrients come from the USDA database, and the day's intake is compared with the user's goal.</p>
             <p class="stack">Python, Qwen2-VL, Hugging Face</p>
-            <p class="plinks">
-              <a href="https://github.com/hepejav/CalorIA" target="_blank" rel="noopener" data-i18n="l.code">Code</a>
-              <a href="https://github.com/hepejav/CalorIA/blob/HEAD/CalorIA_presentacion.pdf" target="_blank" rel="noopener" data-i18n="l.slides">Slides</a>
-            </p>
           </article>
 
           <article class="card">
-            <p class="figure-num" data-i18n="p.lal.n1">+2,200 USD</p>
-            <p class="figure-note" data-i18n="p.lal.n">estimated effect on 1978 earnings</p>
+            <div class="card-top">
+              <p class="meta" data-i18n="p.lal.meta">Feb 2026, Master's</p>
+              <p class="icons">
+                <a class="icon" href="https://github.com/hepejav/An-lisis-de-los-datos-de-Lalonde-1986-y-Dehejia-y-Wahba-1999-" target="_blank" rel="noopener" aria-label="Code on GitHub" title="Code on GitHub" data-i18n-label="l.code"><svg viewBox="0 0 16 16" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+              </p>
+            </div>
             <h3 data-i18n="p.lal.t">Does job training raise earnings?</h3>
-            <p class="meta" data-i18n="p.lal.meta">Feb 2026, Master's</p>
-            <p data-i18n="p.lal.d">Causal analysis of the Lalonde data. The raw comparison suggests the programme lowers earnings because the groups are not comparable; propensity scores and trimming fix the overlap before estimating the effect.</p>
+            <p class="desc" data-i18n="p.lal.d">Causal analysis of the Lalonde data. The raw comparison suggests the programme lowers earnings because the groups are not comparable; propensity scores and trimming fix the overlap before estimating the effect.</p>
+            <p class="result" data-i18n="p.lal.r">Estimated effect: about +2,200 USD in 1978 earnings</p>
             <p class="stack">R, propensity score, regression</p>
-            <p class="plinks"><a href="https://github.com/hepejav/An-lisis-de-los-datos-de-Lalonde-1986-y-Dehejia-y-Wahba-1999-" target="_blank" rel="noopener" data-i18n="l.code">Code</a></p>
           </article>
 
           <article class="card">
-            <p class="figure-num" data-i18n="p.tel.n1">0.85 AUC</p>
-            <p class="figure-note" data-i18n="p.tel.n">with a tuned decision threshold</p>
+            <div class="card-top">
+              <p class="meta" data-i18n="p.tel.meta">Jan 2026, individual project</p>
+              <p class="icons">
+                <a class="icon" href="https://github.com/hepejav/Telco_Customer_Chrun" target="_blank" rel="noopener" aria-label="Code on GitHub" title="Code on GitHub" data-i18n-label="l.code"><svg viewBox="0 0 16 16" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+              </p>
+            </div>
             <h3 data-i18n="p.tel.t">Telecom customer churn</h3>
-            <p class="meta" data-i18n="p.tel.meta">Jan 2026, individual project</p>
-            <p data-i18n="p.tel.d">Churn classifier that uses billing anomalies, taken from the residuals of a regression, as features. A voting ensemble lets the business choose between precision and recall.</p>
+            <p class="desc" data-i18n="p.tel.d">Churn classifier that uses billing anomalies, taken from the residuals of a regression, as features. A voting ensemble with a tuned threshold lets the business choose between precision and recall.</p>
+            <p class="result">AUC 0.85</p>
             <p class="stack">Python, XGBoost, LightGBM, scikit-learn</p>
-            <p class="plinks"><a href="https://github.com/hepejav/Telco_Customer_Chrun" target="_blank" rel="noopener" data-i18n="l.code">Code</a></p>
           </article>
 
           <article class="card">
-            <p class="figure-num" data-i18n="p.por.n1">Top grade</p>
-            <p class="figure-note" data-i18n="p.por.n">in the course</p>
+            <div class="card-top">
+              <p class="meta" data-i18n="p.por.meta">Jan 2026, Master's</p>
+              <p class="icons">
+                <a class="icon" href="https://github.com/Jheivy/Portfolio-Optimization-ARIMA-LogUtility" target="_blank" rel="noopener" aria-label="Code on GitHub" title="Code on GitHub" data-i18n-label="l.code"><svg viewBox="0 0 16 16" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+              </p>
+            </div>
             <h3 data-i18n="p.por.t">Portfolio optimisation with AutoARIMA</h3>
-            <p class="meta" data-i18n="p.por.meta">Jan 2026, Master's</p>
-            <p data-i18n="p.por.d">One step ahead forecasts for five assets, with no look ahead bias, feed mean variance and log utility portfolios.</p>
+            <p class="desc" data-i18n="p.por.d">One step ahead forecasts for five assets, with no look ahead bias, feed mean variance and log utility portfolios.</p>
+            <p class="result" data-i18n="p.por.r">Top grade in the course</p>
             <p class="stack">R, forecast, quadprog, nloptr</p>
-            <p class="plinks"><a href="https://github.com/Jheivy/Portfolio-Optimization-ARIMA-LogUtility" target="_blank" rel="noopener" data-i18n="l.code">Code</a></p>
           </article>
 
-        </div>
-
-        <p class="year">2025</p>
-        <div class="cards">
-
           <article class="card">
-            <p class="figure-num" data-i18n="p.aed.n1">Since 2006</p>
-            <p class="figure-note" data-i18n="p.aed.n">of labour data by sex and age</p>
+            <div class="card-top">
+              <p class="meta" data-i18n="p.aed.meta">Oct – Dec 2025, Master's, team project</p>
+              <p class="icons">
+                <a class="icon" href="https://github.com/hepejav/AED_proyecto" target="_blank" rel="noopener" aria-label="Code on GitHub" title="Code on GitHub" data-i18n-label="l.code"><svg viewBox="0 0 16 16" width="20" height="20" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+                <a class="icon" href="https://github.com/hepejav/AED_proyecto/blob/HEAD/ProyectoAED.pdf" target="_blank" rel="noopener" aria-label="Report (PDF)" title="Report (PDF)" data-i18n-label="l.report"><svg viewBox="0 0 16 16" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M2 1.75C2 .784 2.784 0 3.75 0h6.586c.464 0 .909.184 1.237.513l2.914 2.914c.329.328.513.773.513 1.237v9.586A1.75 1.75 0 0 1 13.25 16h-9.5A1.75 1.75 0 0 1 2 14.25Zm1.75-.25a.25.25 0 0 0-.25.25v12.5c0 .138.112.25.25.25h9.5a.25.25 0 0 0 .25-.25V6h-2.75A1.75 1.75 0 0 1 9 4.25V1.5Zm6.75.062V4.25c0 .138.112.25.25.25h2.688l-.011-.013-2.914-2.914-.013-.011Z"/></svg></a>
+              </p>
+            </div>
             <h3 data-i18n="p.aed.t">Gender gap in the Spanish labour market</h3>
-            <p class="meta" data-i18n="p.aed.meta">Oct – Dec 2025, Master's, team project</p>
-            <p data-i18n="p.aed.d">Exploratory analysis of activity and unemployment in Spain, with animated charts that show how the gap between men and women changes over time.</p>
+            <p class="desc" data-i18n="p.aed.d">Exploratory analysis of activity and unemployment in Spain by sex and age group since 2006, with animated charts that show how the gap changes over time.</p>
             <p class="stack">R, tidyverse, ggplot2</p>
-            <p class="plinks">
-              <a href="https://github.com/hepejav/AED_proyecto" target="_blank" rel="noopener" data-i18n="l.code">Code</a>
-              <a href="https://github.com/hepejav/AED_proyecto/blob/HEAD/ProyectoAED.pdf" target="_blank" rel="noopener" data-i18n="l.report">Report</a>
-            </p>
-          </article>
-
-        </div>
-
-        <p class="year">2024</p>
-        <div class="cards">
-
-          <article class="card">
-            <p class="figure-num" data-i18n="p.air.n1">0.99 F1</p>
-            <p class="figure-note" data-i18n="p.air.n">macro, across six risk levels</p>
-            <h3 data-i18n="p.air.t">Workplace risk from air quality</h3>
-            <p class="meta" data-i18n="p.air.meta">Jul – Aug 2024, internship at AIR Institute</p>
-            <p data-i18n="p.air.d">Classifies the risk of a workspace from CO₂, temperature and humidity sensors, with time weighted exposure features and SMOTE for a 27 to 1 class imbalance.</p>
-            <p class="stack">Python, scikit-learn, XGBoost, SHAP</p>
-          </article>
-
-          <article class="card">
-            <p class="figure-num" data-i18n="p.sen.n1">1,502</p>
-            <p class="figure-note" data-i18n="p.sen.n">interview segments analysed</p>
-            <h3 data-i18n="p.sen.t">Sentiment in job interviews</h3>
-            <p class="meta" data-i18n="p.sen.meta">Jul – Aug 2024, internship at AIR Institute</p>
-            <p data-i18n="p.sen.d">Emotion scores for transcribed interviews, an exponential model of how each emotion weighs on sentiment, and an analysis of each speaker's vocabulary.</p>
-            <p class="stack">Python, Whisper, pysentimiento</p>
           </article>
 
         </div>
@@ -179,10 +150,7 @@
           <div>
             <h3>AI Researcher &amp; Developer</h3>
             <p class="org" data-i18n="exp.w.org">Whizdom.ai, remote</p>
-            <ul class="points">
-              <li data-i18n="exp.w.1">Churn and survival models for iGaming operators, from the raw data to daily scores in production.</li>
-              <li data-i18n="exp.w.2">Found leakage and definition errors in core production features before they reached the model.</li>
-            </ul>
+            <p class="summary" data-i18n="exp.w.summary">Research and development of machine learning models for an iGaming analytics product, from data preparation to production.</p>
           </div>
         </div>
 
@@ -190,38 +158,20 @@
           <p class="when" data-i18n="exp.a.when">Jul – Aug 2024</p>
           <div>
             <h3 data-i18n="exp.a.role">Data Science Intern</h3>
-            <p class="org">AIR Institute, Spain</p>
-            <p class="summary" data-i18n="exp.a.summary">Two applied projects, workplace risk and interview sentiment, both listed above.</p>
+            <p class="org" data-i18n="exp.a.org">AIR Institute, Spain</p>
+            <p class="summary" data-i18n="exp.a.summary">Applied machine learning on environmental sensor data and interview transcripts: classification, NLP and model explainability.</p>
           </div>
         </div>
-      </section>
-
-      <section aria-labelledby="skills-title">
-        <h2 id="skills-title" data-i18n="skills.title">Skills</h2>
-        <dl class="skills">
-          <dt data-i18n="skills.prog">Programming</dt>
-          <dd>Python, SQL, R, Fortran</dd>
-          <dt data-i18n="skills.ml">Modelling</dt>
-          <dd data-i18n="skills.ml.d">scikit-learn, LightGBM, XGBoost, SHAP, Optuna, survival analysis, causal inference</dd>
-          <dt data-i18n="skills.dl">Deep learning</dt>
-          <dd>PyTorch, TensorFlow, Hugging Face, LangChain</dd>
-          <dt data-i18n="skills.data">Data</dt>
-          <dd>DuckDB, ClickHouse, AWS S3, Great Expectations, pandera</dd>
-          <dt>MLOps</dt>
-          <dd>MLflow, Feast, Docker, FastAPI, Git</dd>
-          <dt data-i18n="skills.lang">Languages</dt>
-          <dd data-i18n="skills.lang.d">Spanish (native), English (B1+, working proficiency)</dd>
-        </dl>
       </section>
 
       <section aria-labelledby="edu-title">
         <h2 id="edu-title" data-i18n="edu.title">Education</h2>
 
         <div class="entry">
-          <p class="when">2025 – 2026</p>
+          <p class="when" data-i18n="edu.msc.when">Sep 2025 – now</p>
           <div>
             <h3 data-i18n="edu.msc">Master's in Data Science</h3>
-            <p class="org" data-i18n="edu.msc.org">University of Valencia, GPA 8.86/10</p>
+            <p class="org" data-i18n="edu.msc.org">University of Valencia, GPA 8.86/10, thesis in progress</p>
           </div>
         </div>
 
@@ -234,6 +184,22 @@
         </div>
       </section>
 
+      <section aria-labelledby="skills-title">
+        <h2 id="skills-title" data-i18n="skills.title">Skills</h2>
+        <dl class="skills">
+          <dt data-i18n="skills.prog">Programming</dt>
+          <dd>Python, SQL, R</dd>
+          <dt data-i18n="skills.ml">Modelling</dt>
+          <dd data-i18n="skills.ml.d">scikit-learn, LightGBM, XGBoost, SHAP, survival analysis, causal inference</dd>
+          <dt data-i18n="skills.dl">Deep learning, NLP</dt>
+          <dd>PyTorch, TensorFlow, Hugging Face, LangChain</dd>
+          <dt data-i18n="skills.data">Data and MLOps</dt>
+          <dd>DuckDB, AWS S3, MLflow, Docker, FastAPI, Git</dd>
+          <dt data-i18n="skills.lang">Languages</dt>
+          <dd data-i18n="skills.lang.d">Spanish (native), English (B1+, working proficiency)</dd>
+        </dl>
+      </section>
+
     </main>
 
     <footer>
@@ -242,7 +208,7 @@
 
   </div>
 
-  <script src="./assets/js/script.js?v=4"></script>
+  <script src="./assets/js/script.js?v=5"></script>
 </body>
 
 </html>
